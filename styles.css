@@ -49,6 +49,7 @@ h2, p{
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 1em;
+    z-index: 20;
 }
 
 .button{
@@ -61,6 +62,10 @@ h2, p{
 .button:hover{
     background-color: var(--color-text);
     color: var(--color-primary);
+}
+.button__secondary{
+    background-color: var(--color-bg-accent);
+    color: var(--color-text);
 }
 .button__form{
     border: none;
@@ -130,10 +135,12 @@ header .menu-toggle {
     align-items: start;
     justify-content: center;
 }
+.mobile-nav{
+    list-style: none;
+}
 .mobile-nav a{
     color: #fff;
 }
-
 .mobile-nav.active {
     right: 0;
     z-index: 100;
@@ -254,10 +261,11 @@ header .menu-toggle {
 .submenu-sitio__container {
     position: sticky;
     top: 60px;
-    z-index: 100; /* Asegura que se mantenga encima de otros elementos */
+    z-index: 10; /* Asegura que se mantenga encima de otros elementos */
     background-color: #fff; /* Fondo blanco para destacar */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para separarlo visualmente */
     padding: 10px 0;
+    margin-bottom: 26px;
 }
 
 /* Navegación secundaria */
@@ -351,9 +359,13 @@ section{
     font-size: var(--font-size-h1);
     line-height: 37px;
 }
+.course__subtitle{
+    margin-bottom: 12px;
+}
 
 /* Temario ----------*/
 .course__content{
+    position: relative;
     padding: 35px 5%;
     margin: 0 5% 26px;
     border: 1px solid var(--color-border);
@@ -362,6 +374,12 @@ section{
 .course__content-title{
     font-size: var(--font-size-title);
     text-align: center;
+}
+.course__content-icono{
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    width: 60px;
 }
 /* Modulo */
 .course__module{
@@ -439,6 +457,10 @@ section{
 }
 .testimonials__author p span{
     display: block;
+}
+.testimonials__starts{
+    width: auto;
+    height: 100%;
 }
 
 /* Contacto */

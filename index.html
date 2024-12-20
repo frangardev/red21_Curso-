@@ -25,7 +25,7 @@
     <noscript>
         <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     </noscript>
-    <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <link rel="stylesheet" href="./styles.css">
     <noscript>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -198,9 +198,7 @@
                         </ul>
                     </li>
                 </ul>
-            </nav>
-            
-            
+            </nav>    
     </header>
 
     <!-- Mobile Menu -->
@@ -281,7 +279,7 @@
         <section class="course" >
             <iframe 
                 class="course__video"
-                src="https://www.youtube.com/embed/VH7FtEtYimw?controls=1&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3" 
+                src="https://www.youtube.com/embed/VH7FtEtYimw" 
                 frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen
@@ -289,7 +287,11 @@
                          
             <div class="course__intro">
                 <h1 class="course__title">Curso Online de Decoración y Diseño de Interiores</h1>
-                <p class="course__subtitle">Aprenderás desde cero a decorar todo tipo de ambientes. Conocerás las tendencias actuales de decoración y diseño de interiores.</p>
+                <p class="course__subtitle">Aprenderás desde cero a decorar todo tipo de ambientes. <br/>Conocerás las tendencias actuales de decoración y diseño de interiores.</p>
+                <div class="course__intro--buttons__container">
+                    <a href="#" class="button">Inscribirse</a>
+                    <a href="#s-div6" class="button button__secondary">Más información</a>
+                </div>
             </div>
         </section>
 
@@ -325,22 +327,105 @@
 
         <!-- Temario del curso -->
         <section class="course__content" id="s-div1">
+            <img src="https://media.istockphoto.com/id/1205507976/es/vector/logotipo-de-la-gorra-de-graduaci%C3%B3n-con-mortero-universitario.jpg?s=612x612&w=0&k=20&c=KXeU9LKW11QJBEyj7MIFVGQDgTpEH-Tdsle8GxU73Do=" alt="birrete " class="course__content-icono">
+            
             <h2 class="course__content-title">Contenido del curso</h2>
-            <!-- Módulos -->
+            <!-- Módulos del curso-->
             <ul class="course__module-list">
                 <!-- Card de cada modulo -->
                 <li class="course__module">
                     <h3 class="course__module-title"><span class="course__module-tag">1</span>La decoración. Origen e historia</h3>
                     <ul class="course__module-description">
                         <li>Definición de Decoración e Interiorismo.</li>
-                        <li>Historia y evolución del diseño de interiores.</li>
+                        <li>Origen e historia de la decoración.</li>
+                        <li>Decoración de interiores en la actualidad.</li>
                     </ul>
                 </li>
                 <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">1</span>La decoración. Origen e historia</h3>
+                    <h3 class="course__module-title"><span class="course__module-tag">2</span>Composición</h3>
                     <ul class="course__module-description">
-                        <li>Definición de Decoración e Interiorismo.</li>
-                        <li>Historia y evolución del diseño de interiores.</li>
+                        <li>Punto focal. Diferentes ambientes o espacios.</li>
+                        <li>Armonía y unidad.</li>
+                        <li>Contraste y variedad.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">3</span>La luz</h3>
+                    <ul class="course__module-description">
+                        <li>La luz natural. Los colores en la iluminación. Superficies, texturas y materiales. La distribución de los muebles.</li>
+                        <li>La luz artificial. Elección de lámparas y puntos lumínicos.</li>
+                        <li>Tipos de iluminación.</li>
+                        <li>La iluminación en los diferentes ambientes de una casa, empresa, etc.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">4</span>El color</h3>
+                    <ul class="course__module-description">
+                        <li>Percepción del color.</li>
+                        <li>Propiedades del color. Tono. Luminosidad. Saturación.</li>
+                        <li>Espacio cromático. Colores cálidos y fríos.</li>
+                        <li>Psicología, simbología y estética del color.</li>
+                        <li>Ejemplos prácticos.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">5</span>La ubicación de los elementos</h3>
+                    <ul class="course__module-description">
+                        <li>Importancia del espacio y su distribución.</li>
+                        <li>Elementos y accesorios decorativos.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">6</span>Materiales empleados en decoración</h3>
+                    <ul class="course__module-description">
+                        <li>Elección de los materiales adecuados en decoración de interiores.</li>
+                        <li>Principales materiales: maderas, piedra, ladrillos, baldosas, vidrio, hierro, cuero, linóleo, plásticos.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">7</span>Estilos de Decoración de interiores</h3>
+                    <ul class="course__module-description">
+                        <li>Estilos en decoración: clásico, gótico, barroco, rococó.</li>
+                        <li>Estilos en la actualidad: minimalismo, zen, rústico, loft, kitsch, shabby chic, étnico, colonial, vintage, art decó, feng shui y otros estilos.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">8</span>Efectos decorativos y revestimientos</h3>
+                    <ul class="course__module-description">
+                        <li>Techos y paredes. Molduras. Cornisas.</li>
+                        <li>Revestimientos de paredes y techos.</li>
+                        <li>Revestimientos de pisos o suelos.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">9</span>Decoración de ventanas</h3>
+                    <ul class="course__module-description">
+                        <li>Decoración en función del ambiente.</li>
+                        <li>Persianas. Empleo de mosquiteras. Celosías.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">10</span>Mobiliario</h3>
+                    <ul class="course__module-description">
+                        <li>Distribución del mobiliario.</li>
+                        <li>Tapizado de muebles.</li>
+                        <li>Otros tipos de muebles y accesorios.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">11</span>Aspectos complementarios de la decoración</h3>
+                    <ul class="course__module-description">
+                        <li>Empleo de cuadros o murales. Utilización de plantas.</li>
+                        <li>Detalles funcionales y decorativos.</li>
+                        <li>Recipientes y soportes.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">12</span>Diseño de un proyecto de decoración</h3>
+                    <ul class="course__module-description">
+                        <li>Fase preliminar. Visita al local. Inicio del proyecto.</li>
+                        <li>Instalación de elementos imprescindibles. Colocación de mobiliario.</li>
+                        <li>Control de calidad y planos o resumen del trabajo a entregar.</li>
                     </ul>
                 </li>
             </ul>
@@ -371,19 +456,56 @@
                     <h3 class="info-item__big">Curso personalizado</h3>
                     <p class="info-item__small">El contenido del curso se adapta a tus conocimientos previos. No importa si tienes experiencia o no, ajustamos las lecciones para que avances a tu ritmo. Además, puedes utilizar cualquier dispositivo que tengas, ya sea computadora, tablet o móvil.</p>
                 </li>
-  
+                <li class="info-item">
+                    <h3 class="info-item__big">Curso online</h3>
+                    <p class="info-item__small">El curso es completamente online, lo que significa que no necesitas estar conectada a una hora específica. Tú decides cuándo estudiar, según tu tiempo disponible.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Acceso permanente</h3>
+                    <p class="info-item__small">Las lecciones, materiales y ejercicios están disponibles las 24 horas del día, todos los días de la semana.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Soporte continuo</h3>
+                    <p class="info-item__small">Si tienes dudas en cualquier momento, puedes contactar a los tutores por WhatsApp o correo electrónico todos los días, de 11:00 a 21:00 hs.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Duración</h3>
+                    <p class="info-item__small">4 meses. Comienzo: Inmediato. Modalidad intensiva: 2 meses. Cantidad de horas en ambas modalidades: 100 horas.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Duración INEFOP</h3>
+                    <p class="info-item__small">Cantidad de horas totales: 100 horas. Cantidad de jornadas: 25.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Certificación</h3>
+                    <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso emitido por la Distance Learning Red21.com Corporate System reconocido por las principales empresas bajo la modalidad de enseñanza privada. Ejemplo del certificado.</p>
+                </li>
             </ul>
 
         </section>
 
         <!-- Beneficios -->
         <section class="benefits" id="s-div3">
-            <h2 class="benefits__title"><span>✺</span> Beneficios</h2>
-            <ul class="benefits__list">
-                <li class="benefits__item">Cursos complementarios gratuitos al inscribirte.</li>
-                <li class="benefits__item">Certificación reconocida al finalizar el curso.</li>
-                <li class="benefits__item">Acceso inmediato al contenido desde la inscripción.</li>
-                <li class="benefits__item">Aprende a tu ritmo con clases online disponibles 24/7.</li>
+            <h2 class="title__section"><span>✺</span> Beneficios</h2>
+            <ul class="info__list">
+                <li class="info-item">
+                    <h3 class="info-item__big">Cursos complementarios gratuitos</h3>
+                    <p class="info-item__small"> Además del curso de Decoración de interiores recibirás en forma complementaria los cursos de Organización de eventos y Cómo utilizar la Inteligencia Artificial en Decoración</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Comienzo inmediato</h3>
+                    <p class="info-item__small">Comenzarás el curso al día siguiente de la fecha de inscripción.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">El título final a obtener es de Técnico en Decoracion y Diseño de Interiores.</h3>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Aprende a tu ritmo</h3>
+                    <p class="info-item__small">No necesitas estar conectado a una determinada hora. Puedes tomar las lecciones en cualquier horario y todos los días de la semana, las 24 horas.</p>
+                </li>
+                <li class="info-item">
+                    <h3 class="info-item__big">Curso habilitado por INEFOP.</h3>
+                </li>
             </ul>
         </section>
 
@@ -410,9 +532,35 @@
                         alt="starts">
                 </footer>
             </blockquote>
+            <blockquote class="testimonials__quote">
+                <p class="info-item__big">“Muy buen curso online, práctico y personalizado. Gracias a los consejos de los tutores, consegui mis primeros clientes para un emprendimiento propio de Decoración de locales comerciales. ""</p>
+                <footer class="testimonials__author">
+                    <p>
+                        <span>Pilar Gorosito,</span> 
+                        <span>Maldonado, Uruguay.</span> 
+                    </p>
+                    <img 
+                        class="testimonials__starts"
+                        src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                        alt="starts">
+                </footer>
+            </blockquote>
+            <blockquote class="testimonials__quote">
+                <p class="info-item__big">“Muy buena capacitación. Ahora estoy trabajando en nuevos proyectos donde estoy aplicando lo aprendido sobre Interiorismo".</p>
+                <footer class="testimonials__author">
+                    <p>
+                        <span>Mariela Rebollo,</span> 
+                        <span>Colonia, Uruguay.</span> 
+                    </p>
+                    <img 
+                        class="testimonials__starts"
+                        src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                        alt="starts">
+                </footer>
+            </blockquote>
         </section>
 
-        <section class="contact" id="s-div">
+        <section class="contact" id="s-div6">
             <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
             <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
             <form class="contact__form" action="#" method="POST">
