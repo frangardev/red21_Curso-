@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V10JJ85V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-5V10JJ85V9');
+    </script>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso online de Decoración y Diseño de Interiores en Uruguay.</title>
+    <meta name="description" content="Aprende a decorar todo tipo de ambientes interiores y exteriores.">
+    <meta name="keywords" content="curso a distancia Decoracion, curso online Decoracion, curso por internet Decoracion, curso online de interiorismo, curso de decoracion, curso de interiorismo">
+
+    <!-- Preloading Fonts and Stylesheets -->
+    <link rel="preload" href="assets/fonts/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    </noscript>
+    <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./styles.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    </noscript>
+
+    <!-- Styles -->
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+
+            .col-sm-2 {
+                width: 16.66666667%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #feb201;
+            display: block;
+            justify-content: center;
+            padding: 0 20%;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .dropdown {
+            float: right;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav {
+                padding: 0 5%;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script async src="assets/js/bundle.w3data.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+            <a href="/">
+                <img class="logo__header" src="https://cursosadistancia.com.uy/assets/img/logo-1.png" alt="logo">
+            </a>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+    
+            <!-- Desktop Navigation -->
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="#" class="site-nav__link">Cursos</a>
+                        <ul class="site-nav__submenu">
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Curso 1</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Curso 2</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Curso 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="#" class="site-nav__link">Inscripción</a>
+                        <ul class="site-nav__submenu">
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Inscripción a cursos</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Ingreso alumnos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="#" class="site-nav__link">Información</a>
+                        <ul class="site-nav__submenu">
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Preguntas frecuentes</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Cómo enseñamos</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Empresas</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Testimonios</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="#" class="site-nav__link">Contacto</a>
+                        <ul class="site-nav__submenu">
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Acerca de</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Contáctenos</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="#" class="site-nav__submenu-link">Portal de trabajo</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li class="mobile-nav__li"><a href="/"><span>🏠</span> Inicio →</a></li>
+            <li>
+                <h3 class="nav_title">
+                    <span>📚</span> Cursos
+                </h3>
+                <ul class="list-nav">
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/temas.html">Todos los cursos →</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-nav__li">
+                <h3 class="nav_title">
+                    <span>🎓</span> Inscripción
+                </h3>
+                <ul class="list-nav">
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/temas.html">Inscripción a cursos →</a>
+                    </li>
+                    <li>
+                        <a href="https://red21cursos.com/campus/">Ingreso alumno →</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-nav__li">
+                <h3 class="nav_title">
+                    <span>📄</span> Información
+                </h3>
+                <ul class="list-nav">
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/preguntas.html">Preguntas frecuentes →</a>
+                    </li>
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/como_funciona.html">Como enseñamos →</a>
+                    </li>
+                    <li>
+                        <a href="https://www.red21.net/">Empresas →</a>
+                    </li>
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/testimonios.html">Testimonios →</a>
+                    </li>
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/terminos.html">Términos y condiciones →</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-nav__li">
+                <h3 class="nav_title">
+                    <span>✉️</span> Contacto
+                </h3>
+                <ul class="list-nav">
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/acerca.html">Acerca de Red21 →</a>
+                    </li>
+                    <li>
+                        <a href="https://cursosadistancia.com.uy/contacto.html">Cóntactenos →</a>
+                    </li>
+                    <li>
+                        <a href="https://www.desdecualquierlugar.com/">Portal de trabajo →</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a href="https://wa.me/" class="whatsapp">WhatsApp 💬</a>
+    </div>
+
+    
+    <main class="main">
+        <!-- whatsapp (botón fijo) -->
+         <a href="https://wa.me/" class="whatsapp__fixed">Chat 💬</a>
+         
+        <!-- Header (video, titulo y objetivos) -->
+        <section class="course" >
+            <iframe 
+                class="course__video"
+                src="https://www.youtube.com/embed/VH7FtEtYimw?controls=1&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3" 
+                frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+            ></iframe>
+                         
+            <div class="course__intro">
+                <h1 class="course__title">Curso Online de Decoración y Diseño de Interiores</h1>
+                <p class="course__subtitle">Aprenderás desde cero a decorar todo tipo de ambientes. Conocerás las tendencias actuales de decoración y diseño de interiores.</p>
+            </div>
+        </section>
+
+        <!-- Navegación del contenido del sitio -->
+        <aside class="submenu-sitio__container">
+            <nav class="submenu-sitio">
+                <ul class="submenu-sitio__list">
+                    <li class="submenu-sitio__item">
+                        <a href="#s-div1" class="submenu-sitio__link">Temario</a>
+                    </li>
+                    <li class="submenu-sitio__item">
+                        <a href="#s-div2" class="submenu-sitio__link">Cómo funciona</a>
+                    </li>
+                    <li class="submenu-sitio__item">
+                        <a href="#s-div3" class="submenu-sitio__link">Beneficios</a>
+                    </li>
+                    <li class="submenu-sitio__item">
+                        <a href="#s-div4" class="submenu-sitio__link">Inscripción</a>
+                    </li>
+                    <li class="submenu-sitio__item">
+                        <a href="#s-div5" class="submenu-sitio__link">Testimonios</a>
+                    </li>
+                    <li class="submenu-sitio__item">
+                        <a href="#s-div6" class="submenu-sitio__link">Contacto</a>
+                    </li>
+                    <li class="submenu-sitio__item">
+                        <a href="#" class="submenu-sitio__link button">Inscribirse</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+
+        <!-- Temario del curso -->
+        <section class="course__content" id="s-div1">
+            <h2 class="course__content-title">Contenido del curso</h2>
+            <!-- Módulos -->
+            <ul class="course__module-list">
+                <!-- Card de cada modulo -->
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">1</span>La decoración. Origen e historia</h3>
+                    <ul class="course__module-description">
+                        <li>Definición de Decoración e Interiorismo.</li>
+                        <li>Historia y evolución del diseño de interiores.</li>
+                    </ul>
+                </li>
+                <li class="course__module">
+                    <h3 class="course__module-title"><span class="course__module-tag">1</span>La decoración. Origen e historia</h3>
+                    <ul class="course__module-description">
+                        <li>Definición de Decoración e Interiorismo.</li>
+                        <li>Historia y evolución del diseño de interiores.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Cursos adicionales -->
+        <section class="bonus">
+            <div class="bonus__content">
+                <h2 class="bonus__title">¡Aprovecha! Al inscribirte, te llevas 2 cursos complementarios gratis.</h2>
+                <ul class="bonus__list-course">
+                    <li>Curso Online de Organización de Eventos</li>
+                    <li>Curso Online de Inteligencia Artificial Aplicada en la Empresa</li>
+                </ul>
+                <a href="#" class="button">Inscribirse</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="title__section"><span>✺</span> A quién está dirigido</h2>
+            <p class="info-item__text">Público en general.</p>
+        </section>
+
+        <!-- ¿Cómo funciona? -->
+        <section class="how-it-works" id="s-div2">
+            <h2 class="title__section"><span>✺</span> ¿Cómo funciona?</h2>
+            <ul class="info__list">
+                <li class="info-item">
+                    <h3 class="info-item__big">Curso personalizado</h3>
+                    <p class="info-item__small">El contenido del curso se adapta a tus conocimientos previos. No importa si tienes experiencia o no, ajustamos las lecciones para que avances a tu ritmo. Además, puedes utilizar cualquier dispositivo que tengas, ya sea computadora, tablet o móvil.</p>
+                </li>
+  
+            </ul>
+
+        </section>
+
+        <!-- Beneficios -->
+        <section class="benefits" id="s-div3">
+            <h2 class="benefits__title"><span>✺</span> Beneficios</h2>
+            <ul class="benefits__list">
+                <li class="benefits__item">Cursos complementarios gratuitos al inscribirte.</li>
+                <li class="benefits__item">Certificación reconocida al finalizar el curso.</li>
+                <li class="benefits__item">Acceso inmediato al contenido desde la inscripción.</li>
+                <li class="benefits__item">Aprende a tu ritmo con clases online disponibles 24/7.</li>
+            </ul>
+        </section>
+
+        <!-- Formas de pago -->
+        <section class="payment" id="s-div4">
+            <h2 class="title__section"><span>✺</span> Formas de pago e inscripción</h2>
+            <p class="info-item__big">Conoce todas las facilidades de pago y comienza tu formación hoy mismo</p>
+            <a href="#">Ver detalles de inscripción</a>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="testimonials" id="s-div5">
+            <h2 class="title__section"><span>✺</span> Testimonios 2024</h2>
+            <blockquote class="testimonials__quote">
+                <p class="info-item__big">"Excelente curso de Decoración. Estoy muy conforme. ¡He comenzado a hacer mis primeros diseños por mi cuenta!"</p>
+                <footer class="testimonials__author">
+                    <p>
+                        <span>Carina Porto,</span> 
+                        <span>Montevideo, Uruguay.</span> 
+                    </p>
+                    <img 
+                        class="testimonials__starts"
+                        src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                        alt="starts">
+                </footer>
+            </blockquote>
+        </section>
+
+        <section class="contact" id="s-div">
+            <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
+            <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
+            <form class="contact__form" action="#" method="POST">
+                <label for="name" class="contact__label">Nombre</label>
+                <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
+
+                <label for="email" class="contact__label">Correo</label>
+                <input id="email" name="email" type="email" class="contact__input" placeholder="Ingresa tu correo electrónico" required>
+
+                <label for="phone" class="contact__label">Teléfono</label>
+                <input id="phone" name="phone" type="tel" class="contact__input" placeholder="Ingresa tu número de teléfono">
+
+                <label for="message" class="contact__label">Mensaje</label>
+                <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit" class="button button__form">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+     <!-- NO BORRAR. ESTO ES EL PIE DE PAGINA -->
+     <div w3-include-html="assets/htmlincludes/footer.html"></div>
+     <!-- NO BORRAR. ESTO ES EL PIE DE PAGINA -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="https://cursosadistancia.com.uy/assets/img/logo-1.png" alt="logo" class="logo__footer">
+            <p>24 años enseñando online</p>
+        </div>
+   
+        <form action="URR" method="POST" >
+            <label class="correo-form__label" for="email">Recibe novedades en educación, teletrabajo y oportunidades de empleo</label>
+            <div class="correo-form">
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit" class="button ">Enviar</button>
+            </div>
+          </form>
+          
+        <div class="footer__links">
+            <h3>Sitios en Red21.com:</h3>
+            <ul class="footer-sites__list">
+                <li class="footer-sites__item">
+                    <a href="https://www.cursosadistancia.com.uy" class="footer-sites__link">Uruguay</a>
+                </li>
+    
+              
+                <li class="footer-sites__item">
+                    <a href="https://www.red21.net/cursos-online-Argentina/" class="footer-sites__link">Argentina</a>
+                </li>
+    
+                <li class="footer-sites__item">
+                    <a href="http://www.cursoadistancia.co/" class="footer-sites__link">Colombia</a>
+                </li>
+    
+                <li class="footer-sites__item">
+                    <a href="https://www.cursosonline21.es" class="footer-sites__link">España</a>
+                </li>
+    
+                <li class="footer-sites__item">
+                    <a href="https://www.cursosadistancia.mx" class="footer-sites__link">México</a>
+                </li>
+    
+                <li class="footer-sites__item">
+                    <a href="https://www.red21.net" class="footer-sites__link">Empresas</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        // Menú
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+
+        let isMenuOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            console.log('Hola')
+            isMenuOpen = !isMenuOpen;
+
+            if (isMenuOpen) {
+                mobileNav.classList.add('active');
+                menuToggle.textContent = '✖'; // Icono de cierre
+            } else {
+                mobileNav.classList.remove('active');
+                menuToggle.textContent = '☰'; // Icono de hamburguesa
+            }
+        });
+    </script>
+</body>
+
+</html>
