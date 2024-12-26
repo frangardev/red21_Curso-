@@ -26,10 +26,12 @@
         <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     </noscript>
     <!-- <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+     <!-- Estilios personalizado -->
     <link rel="stylesheet" href="./styles.css">
     <noscript>
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
 
     <!-- Styles -->
     <style type="text/css">
@@ -131,83 +133,135 @@
 <body>
     <header class="navbar">
             <a href="/">
-                <img class="logo__header" src="https://cursosadistancia.com.uy/assets/img/logo-1.png" alt="logo">
+                <!-- <img class="logo__header" src=" alt="logo">
+                <img src="assets/img/logo-1.png" alt="Logo" srcset=""> -->
+                <img
+                    class="logo__header" 
+                    src="assets/img/logo-1.png" 
+                    alt="Logotipo red21" 
+                    onerror="this.onerror=null; this.src='https://cursosadistancia.com.uy/assets/img/logo-1.png';"
+                >
+
             </a>
-            <button class="menu-toggle" id="menuToggle">☰</button>
+            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
     
             <!-- Desktop Navigation -->
             <nav class="site-nav">
                 <ul class="site-nav__list">
+                    <!-- Cursos -->
                     <li class="site-nav__item">
-                        <a href="#" class="site-nav__link">Cursos</a>
+                        <a href="temas.html" class="site-nav__link">Cursos</a>
                         <ul class="site-nav__submenu">
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Curso 1</a>
+                                <a href="temas.html" class="site-nav__submenu-link">Todas las áreas</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Curso 2</a>
+                                <a href="temas.html#item-1" class="site-nav__submenu-link">Área Diseño y Artes</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Curso 3</a>
+                                <a href="temas.html#item-2" class="site-nav__submenu-link">Área Internet</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-3" class="site-nav__submenu-link">Área Programación</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-4" class="site-nav__submenu-link">Área Reparación de Redes y Hardware</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-5" class="site-nav__submenu-link">Área Informática Fundamental</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-6" class="site-nav__submenu-link">Área Windows y Linux</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-7" class="site-nav__submenu-link">Área Marketing y Gestión</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-8" class="site-nav__submenu-link">Área Finanzas e Inversiones</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-9" class="site-nav__submenu-link">Área Salud y Bienestar</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-10" class="site-nav__submenu-link">Área Belleza e Imagen</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-11" class="site-nav__submenu-link">Área Medio Ambiente y Energías Renovables</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-12" class="site-nav__submenu-link">Área Turismo y Hostelería</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-13" class="site-nav__submenu-link">Área Idiomas</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html" class="site-nav__submenu-link">Cursos Cortos</a>
+                            </li>
+                            <li class="site-nav__submenu-item">
+                                <a href="temas.html#item-14" class="site-nav__submenu-link">Otros Cursos</a>
                             </li>
                         </ul>
                     </li>
+                    <!-- Inscripción -->
                     <li class="site-nav__item">
-                        <a href="#" class="site-nav__link">Inscripción</a>
+                        <a href="temas.html" class="site-nav__link">Inscripción</a>
                         <ul class="site-nav__submenu">
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Inscripción a cursos</a>
+                                <a href="temas.html" class="site-nav__submenu-link">Inscripción a cursos</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Ingreso alumnos</a>
+                                <a href="http://www.red21cursos.com/campus/" class="site-nav__submenu-link">Ingreso alumnos</a>
                             </li>
                         </ul>
                     </li>
+                    <!-- Información -->
                     <li class="site-nav__item">
-                        <a href="#" class="site-nav__link">Información</a>
+                        <a href="preguntas.html" class="site-nav__link">Información</a>
                         <ul class="site-nav__submenu">
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Preguntas frecuentes</a>
+                                <a href="preguntas.html" class="site-nav__submenu-link">Preguntas frecuentes</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Cómo enseñamos</a>
+                                <a href="como_funciona.html" class="site-nav__submenu-link">Cómo enseñamos</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Empresas</a>
+                                <a href="https://www.red21.net" class="site-nav__submenu-link">Empresas</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Testimonios</a>
+                                <a href="testimonios.html" class="site-nav__submenu-link">Testimonios</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Términos y condiciones</a>
+                                <a href="terminos.html" class="site-nav__submenu-link">Términos y condiciones</a>
                             </li>
                         </ul>
                     </li>
+                    <!-- Contacto -->
                     <li class="site-nav__item">
-                        <a href="#" class="site-nav__link">Contacto</a>
+                        <a href="acerca.html" class="site-nav__link">Contacto</a>
                         <ul class="site-nav__submenu">
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Acerca de</a>
+                                <a href="acerca.html" class="site-nav__submenu-link">Acerca de Red21</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Contáctenos</a>
+                                <a href="contacto.html" class="site-nav__submenu-link">Contáctenos</a>
                             </li>
                             <li class="site-nav__submenu-item">
-                                <a href="#" class="site-nav__submenu-link">Portal de trabajo</a>
+                                <a href="https://www.desdecualquierlugar.com" class="site-nav__submenu-link">Portal de trabajo</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </nav>    
+            </nav>
+              
     </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-nav" id="mobileNav">
         <ul>
-            <li class="mobile-nav__li"><a href="/"><span>🏠</span> Inicio →</a></li>
-            <li>
+            <li class="mobile-nav__li"><a href="/"><span><i class="fa-solid fa-house"></i></span> Inicio →</a></li>
+            <li class="mobile-nav__li">
                 <h3 class="nav_title">
-                    <span>📚</span> Cursos
+                    <span><i class="fa-solid fa-book"></i></span> Cursos
                 </h3>
                 <ul class="list-nav">
                     <li>
@@ -217,7 +271,7 @@
             </li>
             <li class="mobile-nav__li">
                 <h3 class="nav_title">
-                    <span>🎓</span> Inscripción
+                    <span><i class="fa-solid fa-graduation-cap"></i></span> Inscripción
                 </h3>
                 <ul class="list-nav">
                     <li>
@@ -230,7 +284,7 @@
             </li>
             <li class="mobile-nav__li">
                 <h3 class="nav_title">
-                    <span>📄</span> Información
+                    <span><i class="fa-solid fa-newspaper"></i></span> Información
                 </h3>
                 <ul class="list-nav">
                     <li>
@@ -252,7 +306,7 @@
             </li>
             <li class="mobile-nav__li">
                 <h3 class="nav_title">
-                    <span>✉️</span> Contacto
+                    <span><i class="fa-solid fa-envelope"></i></span> Contacto
                 </h3>
                 <ul class="list-nav">
                     <li>
@@ -267,15 +321,18 @@
                 </ul>
             </li>
         </ul>
-        <a href="https://wa.me/" class="whatsapp">WhatsApp 💬</a>
+        <a href="https://wa.me/" class="whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp </a>
     </div>
 
     
     <main class="main">
         <!-- whatsapp (botón fijo) -->
-         <a href="https://wa.me/" class="whatsapp__fixed">Chat 💬</a>
+         <a href="https://api.whatsapp.com/send?phone=59892385824" class="whatsapp__fixed">
+            <i class="fa-brands fa-whatsapp"></i> 
+            <span>Chat</span>
+        </a>
          
-        <!-- Header (video, titulo y objetivos) -->
+        <!-- Header (video, titulo) -->
         <section class="course" >
             <iframe 
                 class="course__video"
@@ -287,11 +344,6 @@
                          
             <div class="course__intro">
                 <h1 class="course__title">Curso Online de Decoración y Diseño de Interiores</h1>
-                <p class="course__subtitle">Aprenderás desde cero a decorar todo tipo de ambientes. <br/>Conocerás las tendencias actuales de decoración y diseño de interiores.</p>
-                <div class="course__intro--buttons__container">
-                    <a href="#" class="button">Inscribirse</a>
-                    <a href="#s-div6" class="button button__secondary">Más información</a>
-                </div>
             </div>
         </section>
 
@@ -323,262 +375,334 @@
                 </ul>
             </nav>
         </aside>
-        
 
-        <!-- Temario del curso -->
-        <section class="course__content" id="s-div1">
-            <img src="https://media.istockphoto.com/id/1205507976/es/vector/logotipo-de-la-gorra-de-graduaci%C3%B3n-con-mortero-universitario.jpg?s=612x612&w=0&k=20&c=KXeU9LKW11QJBEyj7MIFVGQDgTpEH-Tdsle8GxU73Do=" alt="birrete " class="course__content-icono">
-            
-            <h2 class="course__content-title">Contenido del curso</h2>
-            <!-- Módulos del curso-->
-            <ul class="course__module-list">
-                <!-- Card de cada modulo -->
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">1</span>La decoración. Origen e historia</h3>
-                    <ul class="course__module-description">
-                        <li>Definición de Decoración e Interiorismo.</li>
-                        <li>Origen e historia de la decoración.</li>
-                        <li>Decoración de interiores en la actualidad.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">2</span>Composición</h3>
-                    <ul class="course__module-description">
-                        <li>Punto focal. Diferentes ambientes o espacios.</li>
-                        <li>Armonía y unidad.</li>
-                        <li>Contraste y variedad.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">3</span>La luz</h3>
-                    <ul class="course__module-description">
-                        <li>La luz natural. Los colores en la iluminación. Superficies, texturas y materiales. La distribución de los muebles.</li>
-                        <li>La luz artificial. Elección de lámparas y puntos lumínicos.</li>
-                        <li>Tipos de iluminación.</li>
-                        <li>La iluminación en los diferentes ambientes de una casa, empresa, etc.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">4</span>El color</h3>
-                    <ul class="course__module-description">
-                        <li>Percepción del color.</li>
-                        <li>Propiedades del color. Tono. Luminosidad. Saturación.</li>
-                        <li>Espacio cromático. Colores cálidos y fríos.</li>
-                        <li>Psicología, simbología y estética del color.</li>
-                        <li>Ejemplos prácticos.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">5</span>La ubicación de los elementos</h3>
-                    <ul class="course__module-description">
-                        <li>Importancia del espacio y su distribución.</li>
-                        <li>Elementos y accesorios decorativos.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">6</span>Materiales empleados en decoración</h3>
-                    <ul class="course__module-description">
-                        <li>Elección de los materiales adecuados en decoración de interiores.</li>
-                        <li>Principales materiales: maderas, piedra, ladrillos, baldosas, vidrio, hierro, cuero, linóleo, plásticos.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">7</span>Estilos de Decoración de interiores</h3>
-                    <ul class="course__module-description">
-                        <li>Estilos en decoración: clásico, gótico, barroco, rococó.</li>
-                        <li>Estilos en la actualidad: minimalismo, zen, rústico, loft, kitsch, shabby chic, étnico, colonial, vintage, art decó, feng shui y otros estilos.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">8</span>Efectos decorativos y revestimientos</h3>
-                    <ul class="course__module-description">
-                        <li>Techos y paredes. Molduras. Cornisas.</li>
-                        <li>Revestimientos de paredes y techos.</li>
-                        <li>Revestimientos de pisos o suelos.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">9</span>Decoración de ventanas</h3>
-                    <ul class="course__module-description">
-                        <li>Decoración en función del ambiente.</li>
-                        <li>Persianas. Empleo de mosquiteras. Celosías.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">10</span>Mobiliario</h3>
-                    <ul class="course__module-description">
-                        <li>Distribución del mobiliario.</li>
-                        <li>Tapizado de muebles.</li>
-                        <li>Otros tipos de muebles y accesorios.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">11</span>Aspectos complementarios de la decoración</h3>
-                    <ul class="course__module-description">
-                        <li>Empleo de cuadros o murales. Utilización de plantas.</li>
-                        <li>Detalles funcionales y decorativos.</li>
-                        <li>Recipientes y soportes.</li>
-                    </ul>
-                </li>
-                <li class="course__module">
-                    <h3 class="course__module-title"><span class="course__module-tag">12</span>Diseño de un proyecto de decoración</h3>
-                    <ul class="course__module-description">
-                        <li>Fase preliminar. Visita al local. Inicio del proyecto.</li>
-                        <li>Instalación de elementos imprescindibles. Colocación de mobiliario.</li>
-                        <li>Control de calidad y planos o resumen del trabajo a entregar.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Cursos adicionales -->
-        <section class="bonus">
-            <div class="bonus__content">
-                <h2 class="bonus__title">¡Aprovecha! Al inscribirte, te llevas 2 cursos complementarios gratis.</h2>
-                <ul class="bonus__list-course">
-                    <li>Curso Online de Organización de Eventos</li>
-                    <li>Curso Online de Inteligencia Artificial Aplicada en la Empresa</li>
+        <!-- Contendio del sitio -->
+        <div class="content__info">
+            <!-- Objetivos del curso -->
+            <section>
+                <h2 class="title__section">
+                    <span><i class="fa fa-compass encabezado-preguntas-fa"></i> </span>
+                    Objetivos
+                </h2>
+                <ul class="info__list">
+                    <li class="info-item info-item__small"><i class="fa-solid fa-check"></i> Aprenderás desde cero a decorar todo tipo de ambientes.</li>
+                    <li class="info-item info-item__small"><i class="fa-solid fa-check"></i> Conocerás las tendencias actuales de decoración y diseño de interiores.</li>
                 </ul>
-                <a href="#" class="button">Inscribirse</a>
-            </div>
-        </section>
+                <div class="course__intro--buttons__container">
+                    <a href="" class="button">Inscribirse</a>
+                    <a href="#s-div6" class="button button__secondary">Más información</a>
+                </div>
+            </section>
 
-        <section>
-            <h2 class="title__section"><span>✺</span> A quién está dirigido</h2>
-            <p class="info-item__text">Público en general.</p>
-        </section>
+            <!-- Temario del curso -->
+            <section class="course__content" id="s-div1">
+                <i class="fa fa-graduation-cap course__content-icono"></i>
+                <h2 class="course__content-title">Contenido del curso</h2>
+                <!-- Módulos del curso-->
+                <ul class="course__module-list">
+                    <!-- Card de cada modulo -->
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">1</span>La decoración. Origen e historia</h3>
+                        <ul class="course__module-description">
+                            <li>Definición de Decoración e Interiorismo.</li>
+                            <li>Origen e historia de la decoración.</li>
+                            <li>Decoración de interiores en la actualidad.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">2</span>Composición</h3>
+                        <ul class="course__module-description">
+                            <li>Punto focal. Diferentes ambientes o espacios.</li>
+                            <li>Armonía y unidad.</li>
+                            <li>Contraste y variedad.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">3</span>La luz</h3>
+                        <ul class="course__module-description">
+                            <li>La luz natural. Los colores en la iluminación. Superficies, texturas y materiales. La distribución de los muebles.</li>
+                            <li>La luz artificial. Elección de lámparas y puntos lumínicos.</li>
+                            <li>Tipos de iluminación.</li>
+                            <li>La iluminación en los diferentes ambientes de una casa, empresa, etc.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">4</span>El color</h3>
+                        <ul class="course__module-description">
+                            <li>Percepción del color.</li>
+                            <li>Propiedades del color. Tono. Luminosidad. Saturación.</li>
+                            <li>Espacio cromático. Colores cálidos y fríos.</li>
+                            <li>Psicología, simbología y estética del color.</li>
+                            <li>Ejemplos prácticos.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">5</span>La ubicación de los elementos</h3>
+                        <ul class="course__module-description">
+                            <li>Importancia del espacio y su distribución.</li>
+                            <li>Elementos y accesorios decorativos.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">6</span>Materiales empleados en decoración</h3>
+                        <ul class="course__module-description">
+                            <li>Elección de los materiales adecuados en decoración de interiores.</li>
+                            <li>Principales materiales: maderas, piedra, ladrillos, baldosas, vidrio, hierro, cuero, linóleo, plásticos.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">7</span>Estilos de Decoración de interiores</h3>
+                        <ul class="course__module-description">
+                            <li>Estilos en decoración: clásico, gótico, barroco, rococó.</li>
+                            <li>Estilos en la actualidad: minimalismo, zen, rústico, loft, kitsch, shabby chic, étnico, colonial, vintage, art decó, feng shui y otros estilos.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">8</span>Efectos decorativos y revestimientos</h3>
+                        <ul class="course__module-description">
+                            <li>Techos y paredes. Molduras. Cornisas.</li>
+                            <li>Revestimientos de paredes y techos.</li>
+                            <li>Revestimientos de pisos o suelos.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">9</span>Decoración de ventanas</h3>
+                        <ul class="course__module-description">
+                            <li>Decoración en función del ambiente.</li>
+                            <li>Persianas. Empleo de mosquiteras. Celosías.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">10</span>Mobiliario</h3>
+                        <ul class="course__module-description">
+                            <li>Distribución del mobiliario.</li>
+                            <li>Tapizado de muebles.</li>
+                            <li>Otros tipos de muebles y accesorios.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">11</span>Aspectos complementarios de la decoración</h3>
+                        <ul class="course__module-description">
+                            <li>Empleo de cuadros o murales. Utilización de plantas.</li>
+                            <li>Detalles funcionales y decorativos.</li>
+                            <li>Recipientes y soportes.</li>
+                        </ul>
+                    </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">12</span>Diseño de un proyecto de decoración</h3>
+                        <ul class="course__module-description">
+                            <li>Fase preliminar. Visita al local. Inicio del proyecto.</li>
+                            <li>Instalación de elementos imprescindibles. Colocación de mobiliario.</li>
+                            <li>Control de calidad y planos o resumen del trabajo a entregar.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-        <!-- ¿Cómo funciona? -->
-        <section class="how-it-works" id="s-div2">
-            <h2 class="title__section"><span>✺</span> ¿Cómo funciona?</h2>
-            <ul class="info__list">
-                <li class="info-item">
-                    <h3 class="info-item__big">Curso personalizado</h3>
-                    <p class="info-item__small">El contenido del curso se adapta a tus conocimientos previos. No importa si tienes experiencia o no, ajustamos las lecciones para que avances a tu ritmo. Además, puedes utilizar cualquier dispositivo que tengas, ya sea computadora, tablet o móvil.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Curso online</h3>
-                    <p class="info-item__small">El curso es completamente online, lo que significa que no necesitas estar conectada a una hora específica. Tú decides cuándo estudiar, según tu tiempo disponible.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Acceso permanente</h3>
-                    <p class="info-item__small">Las lecciones, materiales y ejercicios están disponibles las 24 horas del día, todos los días de la semana.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Soporte continuo</h3>
-                    <p class="info-item__small">Si tienes dudas en cualquier momento, puedes contactar a los tutores por WhatsApp o correo electrónico todos los días, de 11:00 a 21:00 hs.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Duración</h3>
-                    <p class="info-item__small">4 meses. Comienzo: Inmediato. Modalidad intensiva: 2 meses. Cantidad de horas en ambas modalidades: 100 horas.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Duración INEFOP</h3>
-                    <p class="info-item__small">Cantidad de horas totales: 100 horas. Cantidad de jornadas: 25.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Certificación</h3>
-                    <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso emitido por la Distance Learning Red21.com Corporate System reconocido por las principales empresas bajo la modalidad de enseñanza privada. Ejemplo del certificado.</p>
-                </li>
-            </ul>
+            <!-- Cursos adicionales -->
+            <section class="bonus">
+                <div class="bonus__content">
+                    <h2 class="bonus__title">¡Aprovecha! Al inscribirte, te llevas 2 cursos complementarios gratis.</h2>
+                    <ul class="bonus__list-course">
+                        <li>Curso Online de Organización de Eventos</li>
+                        <li>Curso Online de Inteligencia Artificial Aplicada en la Empresa</li>
+                    </ul>
+                    <a href="#" class="button">Inscribirse</a>
+                </div>
+            </section>
 
-        </section>
+            <section>
+                <h2 class="title__section">
+                    <span><i class="fa fa-users encabezado-preguntas-fa"></i></span> 
+                    A quién está dirigido
+                </h2>
+                <p class="info-item__text">Público en general.</p>
+            </section>
 
-        <!-- Beneficios -->
-        <section class="benefits" id="s-div3">
-            <h2 class="title__section"><span>✺</span> Beneficios</h2>
-            <ul class="info__list">
-                <li class="info-item">
-                    <h3 class="info-item__big">Cursos complementarios gratuitos</h3>
-                    <p class="info-item__small"> Además del curso de Decoración de interiores recibirás en forma complementaria los cursos de Organización de eventos y Cómo utilizar la Inteligencia Artificial en Decoración</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Comienzo inmediato</h3>
-                    <p class="info-item__small">Comenzarás el curso al día siguiente de la fecha de inscripción.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">El título final a obtener es de Técnico en Decoracion y Diseño de Interiores.</h3>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Aprende a tu ritmo</h3>
-                    <p class="info-item__small">No necesitas estar conectado a una determinada hora. Puedes tomar las lecciones en cualquier horario y todos los días de la semana, las 24 horas.</p>
-                </li>
-                <li class="info-item">
-                    <h3 class="info-item__big">Curso habilitado por INEFOP.</h3>
-                </li>
-            </ul>
-        </section>
+            <!-- ¿Cómo funciona? -->
+            <section class="how-it-works" id="s-div2">
+                <h2 class="title__section">
+                    <span><i class="fa fa-cog encabezado-preguntas-fa"></i> </span> 
+                    ¿Cómo funciona?
+                </h2>
+                <ul class="info__list">
+                    <li class="info-item">
+                        <h3 class="info-item__big">Curso personalizado</h3>
+                        <p class="info-item__small">El contenido del curso se adapta a tus conocimientos previos. No importa si tienes experiencia o no, ajustamos las lecciones para que avances a tu ritmo. Además, puedes utilizar cualquier dispositivo que tengas, ya sea computadora, tablet o móvil.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Curso online</h3>
+                        <p class="info-item__small">El curso es completamente online, lo que significa que no necesitas estar conectada a una hora específica. Tú decides cuándo estudiar, según tu tiempo disponible.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Acceso permanente</h3>
+                        <p class="info-item__small">Las lecciones, materiales y ejercicios están disponibles las 24 horas del día, todos los días de la semana.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Soporte continuo</h3>
+                        <p class="info-item__small">Si tienes dudas en cualquier momento, puedes contactar a los tutores por WhatsApp o correo electrónico todos los días, de 11:00 a 21:00 hs.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Duración</h3>
+                        <p class="info-item__small">4 meses. Comienzo: Inmediato. Modalidad intensiva: 2 meses. Cantidad de horas en ambas modalidades: 100 horas.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Duración INEFOP</h3>
+                        <p class="info-item__small">Cantidad de horas totales: 100 horas. Cantidad de jornadas: 25.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Certificación</h3>
+                        <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso emitido por la Distance Learning Red21.com Corporate System reconocido por las principales empresas bajo la modalidad de enseñanza privada. Ejemplo del certificado.</p>
+                    </li>
+                </ul>
 
-        <!-- Formas de pago -->
-        <section class="payment" id="s-div4">
-            <h2 class="title__section"><span>✺</span> Formas de pago e inscripción</h2>
-            <p class="info-item__big">Conoce todas las facilidades de pago y comienza tu formación hoy mismo</p>
-            <a href="#">Ver detalles de inscripción</a>
-        </section>
+            </section>
 
-        <!-- Testimonios -->
-        <section class="testimonials" id="s-div5">
-            <h2 class="title__section"><span>✺</span> Testimonios 2024</h2>
-            <blockquote class="testimonials__quote">
-                <p class="info-item__big">"Excelente curso de Decoración. Estoy muy conforme. ¡He comenzado a hacer mis primeros diseños por mi cuenta!"</p>
-                <footer class="testimonials__author">
-                    <p>
-                        <span>Carina Porto,</span> 
-                        <span>Montevideo, Uruguay.</span> 
-                    </p>
-                    <img 
-                        class="testimonials__starts"
-                        src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                        alt="starts">
-                </footer>
-            </blockquote>
-            <blockquote class="testimonials__quote">
-                <p class="info-item__big">“Muy buen curso online, práctico y personalizado. Gracias a los consejos de los tutores, consegui mis primeros clientes para un emprendimiento propio de Decoración de locales comerciales. ""</p>
-                <footer class="testimonials__author">
-                    <p>
-                        <span>Pilar Gorosito,</span> 
-                        <span>Maldonado, Uruguay.</span> 
-                    </p>
-                    <img 
-                        class="testimonials__starts"
-                        src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                        alt="starts">
-                </footer>
-            </blockquote>
-            <blockquote class="testimonials__quote">
-                <p class="info-item__big">“Muy buena capacitación. Ahora estoy trabajando en nuevos proyectos donde estoy aplicando lo aprendido sobre Interiorismo".</p>
-                <footer class="testimonials__author">
-                    <p>
-                        <span>Mariela Rebollo,</span> 
-                        <span>Colonia, Uruguay.</span> 
-                    </p>
-                    <img 
-                        class="testimonials__starts"
-                        src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                        alt="starts">
-                </footer>
-            </blockquote>
-        </section>
+            <!-- Beneficios -->
+            <section class="benefits" id="s-div3">
+                <h2 class="title__section">
+                    <span><i class="fa fa-star encabezado-preguntas-fa"></i></span> 
+                    Beneficios
+                </h2>
+                <ul class="info__list">
+                    <li class="info-item">
+                        <h3 class="info-item__big">Cursos complementarios gratuitos</h3>
+                        <p class="info-item__small"> Además del curso de Decoración de interiores recibirás en forma complementaria los cursos de Organización de eventos y Cómo utilizar la Inteligencia Artificial en Decoración</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Comienzo inmediato</h3>
+                        <p class="info-item__small">Comenzarás el curso al día siguiente de la fecha de inscripción.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">El título final a obtener es de Técnico en Decoracion y Diseño de Interiores.</h3>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Aprende a tu ritmo</h3>
+                        <p class="info-item__small">No necesitas estar conectado a una determinada hora. Puedes tomar las lecciones en cualquier horario y todos los días de la semana, las 24 horas.</p>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Curso habilitado por INEFOP.</h3>
+                    </li>
+                </ul>
+            </section>
 
-        <section class="contact" id="s-div6">
-            <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
-            <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
-            <form class="contact__form" action="#" method="POST">
-                <label for="name" class="contact__label">Nombre</label>
-                <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
+            <!-- Formas de pago -->
+            <section class="payment" id="s-div4">
+                <h2 class="title__section">
+                    <span><i class="fa fa-file-text encabezado-preguntas-fa"></i> </span> 
+                    Formas de pago e inscripción
+                </h2>
+                <ul class="info__list">
+                    <li class="info-item">
+                        <h3 class="info-item__big">Inscripción y Formas de Pago</h3>
+                        <ul class="info-item__sub-list">
+                            <li class="info-item__small"><b>Costo total:</b> $13,690</li>
+                            <li class="info-item__small"><b>Promoción Navidad 2024:</b> $3,490 (75% de descuento, válido hasta el 25/12/2024). Incluye cursos complementarios gratuitos.</li>
+                        </ul>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Formas de Pago</h3>
+                        <ul class="info-item__sub-list">
+                            <li class="info-item__small">Tarjetas de crédito: OCA, Visa y Mastercard (solicitar enlace para Mastercard).</li>
+                            <li class="info-item__small">Transferencia o depósito bancario: Cuenta BBVA.</li>
+                            <li class="info-item__small">Redes de cobranzas: Abitab y Redpagos.</li>
+                            <li class="info-item__small">Paypal: Solicitar enlace especificando el plan de pago.</li>
+                        </ul>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Planes de Financiación</h3>
+                        <ul class="info-item__sub-list">
+                            <li class="info-item__small"><b>Plan 1:</b> 2 cuotas de $1,745.</li>
+                            <li class="info-item__small"><b>Plan 2:</b> 3 cuotas de $1,164.</li>
+                            <li class="info-item__small"><b>Plan 3:</b> 4 cuotas de $873.</li>
+                            <li class="info-item__small"><i>Con OCA, Visa y Mastercard, hasta 12 cuotas sin recargo.</i></li>
+                        </ul>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Solicitar Enlaces de Pago</h3>
+                        <ul class="info-item__sub-list">
+                            <li class="info-item__small">Formulario en el sitio web.</li>
+                            <li class="info-item__small">WhatsApp o respuesta al correo recibido.</li>
+                        </ul>
+                    </li>
+                    <li class="info-item">
+                        <h3 class="info-item__big">Importante</h3>
+                        <ul class="info-item__sub-list">
+                            <li class="info-item__small">Más información disponible completando el formulario correspondiente.</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </section>
 
-                <label for="email" class="contact__label">Correo</label>
-                <input id="email" name="email" type="email" class="contact__input" placeholder="Ingresa tu correo electrónico" required>
+            <!-- Testimonios -->
+            <section class="testimonials" id="s-div5">
+                <h2 class="title__section"><span><i class="fa-solid fa-comment"></i></span> Testimonios 2024</h2>
+                <blockquote class="testimonials__quote">
+                    <p class="info-item__big">"Excelente curso de Decoración. Estoy muy conforme. ¡He comenzado a hacer mis primeros diseños por mi cuenta!"</p>
+                    <footer class="testimonials__author">
+                        <p>
+                            <span>Carina Porto,</span> 
+                            <span>Montevideo, Uruguay.</span> 
+                        </p>
+                        <img 
+                            class="testimonials__starts"
+                            src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                            alt="starts">
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonials__quote">
+                    <p class="info-item__big">“Muy buen curso online, práctico y personalizado. Gracias a los consejos de los tutores, consegui mis primeros clientes para un emprendimiento propio de Decoración de locales comerciales. ""</p>
+                    <footer class="testimonials__author">
+                        <p>
+                            <span>Pilar Gorosito,</span> 
+                            <span>Maldonado, Uruguay.</span> 
+                        </p>
+                        <img 
+                            class="testimonials__starts"
+                            src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                            alt="starts">
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonials__quote">
+                    <p class="info-item__big">“Muy buena capacitación. Ahora estoy trabajando en nuevos proyectos donde estoy aplicando lo aprendido sobre Interiorismo".</p>
+                    <footer class="testimonials__author">
+                        <p>
+                            <span>Mariela Rebollo,</span> 
+                            <span>Colonia, Uruguay.</span> 
+                        </p>
+                        <img 
+                            class="testimonials__starts"
+                            src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                            alt="starts">
+                    </footer>
+                </blockquote>
+            </section>
 
-                <label for="phone" class="contact__label">Teléfono</label>
-                <input id="phone" name="phone" type="tel" class="contact__input" placeholder="Ingresa tu número de teléfono">
+            <!-- Contacto -->
+            <section class="contact" id="s-div6">
+                <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
+                <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
+                <form class="contact__form" action="#" method="POST">
+                    <label for="name" class="contact__label">Nombre</label>
+                    <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
 
-                <label for="message" class="contact__label">Mensaje</label>
-                <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
+                    <label for="email" class="contact__label">Correo</label>
+                    <input id="email" name="email" type="email" class="contact__input" placeholder="Ingresa tu correo electrónico" required>
 
-                <button type="submit" class="button button__form">Enviar</button>
-            </form>
-        </section>
+                    <label for="phone" class="contact__label">Teléfono</label>
+                    <input id="phone" name="phone" type="tel" class="contact__input" placeholder="Ingresa tu número de teléfono">
+
+                    <!-- Campo oculto que envia la información de que curso --> 
+                    <input type="hidden" name="course" value="Curso Online de Decoración y Diseño de Interiores">
+
+                    <label for="message" class="contact__label">Mensaje</label>
+                    <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
+
+                    <button type="submit" class="button button__form">Enviar</button>
+                </form>
+            </section>
+        </div>
     </main>
 
      <!-- NO BORRAR. ESTO ES EL PIE DE PAGINA -->
@@ -587,46 +711,65 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__logo">
-            <img src="https://cursosadistancia.com.uy/assets/img/logo-1.png" alt="logo" class="logo__footer">
-            <p>24 años enseñando online</p>
-        </div>
-   
-        <form action="URR" method="POST" >
-            <label class="correo-form__label" for="email">Recibe novedades en educación, teletrabajo y oportunidades de empleo</label>
-            <div class="correo-form">
-                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-                <button type="submit" class="button ">Enviar</button>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img 
+                    class="footer__img"
+                    src="assets/img/logo-1.png" 
+                    alt="Logotipo red21" 
+                    onerror="this.onerror=null; this.src='https://cursosadistancia.com.uy/assets/img/logo-1.png';"
+                >
+                <p>24 años enseñando online</p>
             </div>
-          </form>
-          
-        <div class="footer__links">
-            <h3>Sitios en Red21.com:</h3>
-            <ul class="footer-sites__list">
-                <li class="footer-sites__item">
-                    <a href="https://www.cursosadistancia.com.uy" class="footer-sites__link">Uruguay</a>
-                </li>
     
-              
-                <li class="footer-sites__item">
-                    <a href="https://www.red21.net/cursos-online-Argentina/" class="footer-sites__link">Argentina</a>
-                </li>
-    
-                <li class="footer-sites__item">
-                    <a href="http://www.cursoadistancia.co/" class="footer-sites__link">Colombia</a>
-                </li>
-    
-                <li class="footer-sites__item">
-                    <a href="https://www.cursosonline21.es" class="footer-sites__link">España</a>
-                </li>
-    
-                <li class="footer-sites__item">
-                    <a href="https://www.cursosadistancia.mx" class="footer-sites__link">México</a>
-                </li>
-    
-                <li class="footer-sites__item">
-                    <a href="https://www.red21.net" class="footer-sites__link">Empresas</a>
-                </li>
+            <form action="URR" method="POST" >
+                <label class="correo-form__label" for="email">Recibe novedades en educación, teletrabajo y oportunidades de empleo</label>
+                <div class="correo-form">
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                    <button type="submit" class="button ">Enviar</button>
+                </div>
+            </form>
+            
+            <div class="footer__links">
+                <h3>Sitios en Red21.com:</h3>
+                <ul class="footer-sites__list">
+                    <li class="footer-sites__item">
+                        <a href="https://www.cursosadistancia.com.uy" class="footer-sites__link">Uruguay</a>
+                    </li>
+        
+                
+                    <li class="footer-sites__item">
+                        <a href="https://www.red21.net/cursos-online-Argentina/" class="footer-sites__link">Argentina</a>
+                    </li>
+        
+                    <li class="footer-sites__item">
+                        <a href="http://www.cursoadistancia.co/" class="footer-sites__link">Colombia</a>
+                    </li>
+        
+                    <li class="footer-sites__item">
+                        <a href="https://www.cursosonline21.es" class="footer-sites__link">España</a>
+                    </li>
+        
+                    <li class="footer-sites__item">
+                        <a href="https://www.cursosadistancia.mx" class="footer-sites__link">México</a>
+                    </li>
+        
+                    <li class="footer-sites__item">
+                        <a href="https://www.red21.net" class="footer-sites__link">Empresas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-dark" >
+            <ul class="footer-dark__list list-inline text-center" style="margin-bottom:0px;">
+                <li style="color: #fff;">Red21.com © 1998-2023</li>
+                <li><a href="contacto.html" class="btn btn-link paises">Contacto</a></li>
+                <li><a href="terminos.html" class="btn btn-link paises">Términos y condiciones de uso</a></li>
+                <li><a href="https://wwww.descualquierlugar.com" class="btn btn-link paises">Trabajo </a></li>
+                <li class="item social"><a style="background-color: #3b5998;" href="https://www.facebook.com/Red21Cursos/" aria-label="f"><i class="fa fa-facebook"></i></a></li>
+                <li class="item social"><img style="height:40px; margin-right:2px;" src="assets/img/iso.png" height="44" width="22.15" alt="social"></li>
+                <li class="item social"><img style="height:40px; margin-left:2px;" src="assets/img/iqnet.png" height="40" width="40" alt="social"></li>
             </ul>
         </div>
     </footer>
