@@ -333,7 +333,11 @@
     
     <main class="main">
         <!-- whatsapp (botón fijo) -->
-         <a href="https://api.whatsapp.com/send?phone=59892385824" class="whatsapp__fixed">
+         <a 
+            href="https://api.whatsapp.com/send?phone=59892385824" 
+            class="whatsapp__fixed"
+            alt="Icono de WhatsApp"
+            >
             <i class="fa-brands fa-whatsapp"></i> 
             <span>Chat</span>
         </a>
@@ -352,25 +356,25 @@
             <nav class="submenu-sitio">
                 <ul class="submenu-sitio__list">
                     <li class="submenu-sitio__item">
-                        <a href="#s-div1" class="submenu-sitio__link">Temario</a>
+                        <a href="#s-div1" class="submenu-sitio__link"> <i class="fa fa-graduation-cap"></i> Temario</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#s-div2" class="submenu-sitio__link">Cómo funciona</a>
+                        <a href="#s-div2" class="submenu-sitio__link"><i class="fa fa-cog encabezado-preguntas-fa"></i> Cómo funciona</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#s-div3" class="submenu-sitio__link">Beneficios</a>
+                        <a href="#s-div3" class="submenu-sitio__link"><i class="fa fa-star encabezado-preguntas-fa"></i> Beneficios</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#s-div4" class="submenu-sitio__link">Inscripción</a>
+                        <a href="#s-div4" class="submenu-sitio__link"><i class="fa-solid fa-credit-card"></i> Inscripción</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#s-div5" class="submenu-sitio__link">Testimonios</a>
+                        <a href="#s-div5" class="submenu-sitio__link"><i class="fa-solid fa-comment"></i> Testimonios</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#s-div6" class="submenu-sitio__link">Contacto</a>
+                        <a href="#s-div6" class="submenu-sitio__link"><i class="fa-solid fa-envelope"></i> Contacto</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#" class="submenu-sitio__link button">Inscribirse</a>
+                        <a href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion%20y%20Dise%C3%B1o%20de%20Interiores&pago=$%203.490%20$%20UY" class="submenu-sitio__link button">Inscribirse</a>
                     </li>
                 </ul>
             </nav>
@@ -389,9 +393,18 @@
                     <li class="info-item info-item__small"><i class="fa-solid fa-check"></i> Conocerás las tendencias actuales de decoración y diseño de interiores.</li>
                 </ul>
                 <div class="course__intro--buttons__container">
-                    <a href="" class="button">Inscribirse</a>
+                    <a aria-label="Inscribirse al curso" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion%20y%20Dise%C3%B1o%20de%20Interiores&pago=$%203.490%20$%20UY" class="button">Inscribirse</a>
                     <a href="#s-div6" class="button button__secondary">Más información</a>
                 </div>
+            </section>
+
+            <!-- A quién está dirigido -->
+            <section class="who_is_it_for">
+                <h2 class="title__section">
+                    <span><i class="fa fa-users encabezado-preguntas-fa"></i></span> 
+                    A quién está dirigido
+                </h2>
+                <p class="info-item__text">Público en general.</p>
             </section>
 
             <!-- Temario del curso -->
@@ -507,16 +520,8 @@
                         <li>Curso Online de Organización de Eventos</li>
                         <li>Curso Online de Inteligencia Artificial Aplicada en la Empresa</li>
                     </ul>
-                    <a href="#" class="button">Inscribirse</a>
+                    <a aria-label="Inscribirse al curso" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion%20y%20Dise%C3%B1o%20de%20Interiores&pago=$%203.490%20$%20UY" class="button">Inscribirse</a>
                 </div>
-            </section>
-
-            <section>
-                <h2 class="title__section">
-                    <span><i class="fa fa-users encabezado-preguntas-fa"></i></span> 
-                    A quién está dirigido
-                </h2>
-                <p class="info-item__text">Público en general.</p>
             </section>
 
             <!-- ¿Cómo funciona? -->
@@ -552,7 +557,7 @@
                     </li>
                     <li class="info-item">
                         <h3 class="info-item__big">Certificación</h3>
-                        <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso emitido por la Distance Learning Red21.com Corporate System reconocido por las principales empresas bajo la modalidad de enseñanza privada. Ejemplo del certificado.</p>
+                        <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso emitido por la Distance Learning Red21.com Corporate System reconocido por las principales empresas bajo la modalidad de enseñanza privada. <a class="button__link" href="https://red21.com/assets/img/D_Decoracion.jpg" target="_blank" rel="noopener noreferrer">Ejemplo del certificado</a></p>
                     </li>
                 </ul>
 
@@ -589,7 +594,7 @@
             <!-- Formas de pago -->
             <section class="payment" id="s-div4">
                 <h2 class="title__section">
-                    <span><i class="fa fa-file-text encabezado-preguntas-fa"></i> </span> 
+                    <span><i class="fa-solid fa-credit-card"></i> </span> 
                     Formas de pago e inscripción
                 </h2>
                 <ul class="info__list">
@@ -598,6 +603,7 @@
                         <ul class="info-item__sub-list">
                             <li class="info-item__small"><b>Costo total:</b> $13,690</li>
                             <li class="info-item__small"><b>Promoción Navidad 2024:</b> $3,490 (75% de descuento, válido hasta el 25/12/2024). Incluye cursos complementarios gratuitos.</li>
+                            <a class="button__link" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion y Diseño de Interiores&amp;pago=$ 3.490 $ UY">Pagar</a>
                         </ul>
                     </li>
                     <li class="info-item">
@@ -612,17 +618,17 @@
                     <li class="info-item">
                         <h3 class="info-item__big">Planes de Financiación</h3>
                         <ul class="info-item__sub-list">
-                            <li class="info-item__small"><b>Plan 1:</b> 2 cuotas de $1,745.</li>
-                            <li class="info-item__small"><b>Plan 2:</b> 3 cuotas de $1,164.</li>
-                            <li class="info-item__small"><b>Plan 3:</b> 4 cuotas de $873.</li>
-                            <li class="info-item__small"><i>Con OCA, Visa y Mastercard, hasta 12 cuotas sin recargo.</i></li>
+                            <li class="info-item__small"><b>Plan 1:</b> 2 cuotas de $1,745. <a class="button__link" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion y Diseño de Interiores&amp;pago=$ 1.745 $ UY">Pagar</a></li>
+                            <li class="info-item__small"><b>Plan 2:</b> 3 cuotas de $1,164. <a class="button__link" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion y Diseño de Interiores&amp;pago=$ 1.164 $ UY">Pagar</a></li>
+                            <li class="info-item__small"><b>Plan 3:</b> 4 cuotas de $873. <a class="button__link" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion y Diseño de Interiores&amp;pago=$ 873 $ UY">Pagar</a></li>
                         </ul>
+                        <p class="info-item__small">Con OCA, Visa y Mastercard, <b>hasta 12 cuotas sin recargo.</b></p>
                     </li>
                     <li class="info-item">
                         <h3 class="info-item__big">Solicitar Enlaces de Pago</h3>
                         <ul class="info-item__sub-list">
-                            <li class="info-item__small">Formulario en el sitio web.</li>
-                            <li class="info-item__small">WhatsApp o respuesta al correo recibido.</li>
+                            <li class="info-item__small"><a class="button__link" href="#s-div6">Formulario</a> en el sitio web.</li>
+                            <li class="info-item__small"><a class="button__link" href="https://api.whatsapp.com/send?phone=59892385824">WhatsApp</a> o respuesta al correo recibido.</li>
                         </ul>
                     </li>
                     <li class="info-item">
