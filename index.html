@@ -339,7 +339,7 @@
             alt="Icono de WhatsApp"
             >
             <i class="fa-brands fa-whatsapp"></i> 
-            <span>Chat</span>
+            <span class="whatsapp__fixed-content"></span>
         </a>
          
         <!-- Header (video, titulo) -->
@@ -348,6 +348,8 @@
                          
             <div class="course__intro">
                 <h1 class="course__title">Curso Online de Decoración y Diseño de Interiores</h1>
+                <p class="info-item__big">Si te inscribes antes del 25/12/2024 , participas de la promoción Navidad 2024
+                </p>
             </div>
         </section>
 
@@ -368,14 +370,14 @@
                         <a href="#s-div4" class="submenu-sitio__link"><i class="fa-solid fa-credit-card"></i> Inscripción</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="#s-div5" class="submenu-sitio__link"><i class="fa-solid fa-comment"></i> Testimonios</a>
-                    </li>
-                    <li class="submenu-sitio__item">
                         <a href="#s-div6" class="submenu-sitio__link"><i class="fa-solid fa-envelope"></i> Contacto</a>
                     </li>
                     <li class="submenu-sitio__item">
-                        <a href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion%20y%20Dise%C3%B1o%20de%20Interiores&pago=$%203.490%20$%20UY" class="submenu-sitio__link button">Inscribirse</a>
+                        <a href="#s-div5" class="submenu-sitio__link"><i class="fa-solid fa-comment"></i> Testimonios</a>
                     </li>
+                    <!-- <li class="submenu-sitio__item">
+                        <a href="#s-div4" class="submenu-sitio__link button">Inscribirse</a>
+                    </li> -->
                 </ul>
             </nav>
         </aside>
@@ -393,7 +395,7 @@
                     <li class="info-item info-item__small"><i class="fa-solid fa-check"></i> Conocerás las tendencias actuales de decoración y diseño de interiores.</li>
                 </ul>
                 <div class="course__intro--buttons__container">
-                    <a aria-label="Inscribirse al curso" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion%20y%20Dise%C3%B1o%20de%20Interiores&pago=$%203.490%20$%20UY" class="button">Inscribirse</a>
+                    <a aria-label="Inscribirse al curso" href="#s-div4" class="button">Inscribirse</a>
                     <a href="#s-div6" class="button button__secondary">Más información</a>
                 </div>
             </section>
@@ -408,9 +410,8 @@
             </section>
 
             <!-- Temario del curso -->
-            <section class="course__content" id="s-div1">
-                <i class="fa fa-graduation-cap course__content-icono"></i>
-                <h2 class="course__content-title">Contenido del curso</h2>
+            <section class="course__contesnt" id="s-div1">
+                <h2 class="title__section"> <span><i class="fa fa-graduation-cap"></i></span> Contenido del curso</h2>
                 <!-- Módulos del curso-->
                 <ul class="course__module-list">
                     <!-- Card de cada modulo -->
@@ -509,18 +510,27 @@
                             <li>Control de calidad y planos o resumen del trabajo a entregar.</li>
                         </ul>
                     </li>
+                    <li class="course__module">
+                        <h3 class="course__module-title">Curso complementario que recibirás sin costo:</h3>
+                        <ul class="course__module-description">
+                            <li><a href="curso_distancia_online_Organizacion_de_eventos.htm" class="button__link" target="_blank" rel="noopener noreferrer">Organización de eventos</a></li>
+                            <li><a href="https://cursosadistancia.com.uy/curso-online-como-aplicar-inteligencia-artificial-empresa.html" class="button__link" target="_blank" rel="noopener noreferrer">Cómo utilizar la Inteligencia Artificial en Decoración</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
 
             <!-- Cursos adicionales -->
             <section class="bonus">
                 <div class="bonus__content">
-                    <h2 class="bonus__title">¡Aprovecha! Al inscribirte, te llevas 2 cursos complementarios gratis.</h2>
-                    <ul class="bonus__list-course">
-                        <li>Curso Online de Organización de Eventos</li>
-                        <li>Curso Online de Inteligencia Artificial Aplicada en la Empresa</li>
-                    </ul>
-                    <a aria-label="Inscribirse al curso" href="https://cursosonline21.com/formulariopago5.php?curso=Decoracion%20y%20Dise%C3%B1o%20de%20Interiores&pago=$%203.490%20$%20UY" class="button">Inscribirse</a>
+                    <h2 class="bonus__title">Si te inscribes antes del 30/12/2024 , recibirás un descuento del 75% + cursos complementarios gratuitos
+                    </h2>
+                    <p class="info-item__big bonus__text">
+                        Para solicitar un enlace de pago escribenos desde nuestro formulario: 
+                        <a class="button__link bonus_link" href="#s-div6">clic aquí</a> o por 
+                        <a class="button__link bonus_link" href="https://api.whatsapp.com/send?phone=59892385824">WhatsApp</a>. 
+                    </p>
+                    <a aria-label="Inscribirse al curso" href="#s-div4" class="button">Inscribirse</a>
                 </div>
             </section>
 
@@ -641,6 +651,30 @@
                 </ul>
             </section>
 
+            <!-- Contacto -->
+            <section class="contact" id="s-div6">
+                <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
+                <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
+                <form class="contact__form" action="#" method="POST">
+                    <label for="name" class="contact__label">Nombre</label>
+                    <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
+
+                    <label for="email" class="contact__label">Correo</label>
+                    <input id="email" name="email" type="email" class="contact__input" placeholder="Ingresa tu correo electrónico" required>
+
+                    <label for="phone" class="contact__label">Teléfono</label>
+                    <input id="phone" name="phone" type="tel" class="contact__input" placeholder="Ingresa tu número de teléfono">
+
+                    <!-- Campo oculto que envia la información de que curso --> 
+                    <input type="hidden" name="course" value="Curso Online de Decoración y Diseño de Interiores">
+
+                    <label for="message" class="contact__label">Mensaje</label>
+                    <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
+
+                    <button type="submit" class="button button__form">Enviar</button>
+                </form>
+            </section>
+
             <!-- Testimonios -->
             <section class="testimonials" id="s-div5">
                 <h2 class="title__section"><span><i class="fa-solid fa-comment"></i></span> Testimonios 2024</h2>
@@ -683,30 +717,19 @@
                             alt="starts">
                     </footer>
                 </blockquote>
-            </section>
-
-            <!-- Contacto -->
-            <section class="contact" id="s-div6">
-                <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
-                <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
-                <form class="contact__form" action="#" method="POST">
-                    <label for="name" class="contact__label">Nombre</label>
-                    <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
-
-                    <label for="email" class="contact__label">Correo</label>
-                    <input id="email" name="email" type="email" class="contact__input" placeholder="Ingresa tu correo electrónico" required>
-
-                    <label for="phone" class="contact__label">Teléfono</label>
-                    <input id="phone" name="phone" type="tel" class="contact__input" placeholder="Ingresa tu número de teléfono">
-
-                    <!-- Campo oculto que envia la información de que curso --> 
-                    <input type="hidden" name="course" value="Curso Online de Decoración y Diseño de Interiores">
-
-                    <label for="message" class="contact__label">Mensaje</label>
-                    <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
-
-                    <button type="submit" class="button button__form">Enviar</button>
-                </form>
+                <blockquote class="testimonials__quote">
+                    <p class="info-item__big">"El curso online fue muy entretenido y me agrego conocimientos fundamentales que necesitaba para mi empresa de construcción".</p>
+                    <footer class="testimonials__author">
+                        <p>
+                            <span>Juan Pedro Diaz,</span> 
+                            <span>Montevideo, Uruguay.</span> 
+                        </p>
+                        <img 
+                            class="testimonials__starts"
+                            src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
+                            alt="starts">
+                    </footer>
+                </blockquote>
             </section>
         </div>
     </main>

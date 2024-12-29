@@ -9,6 +9,8 @@
   --color-border: #bfbfbf;
   --color-bg-accent: #f5f5f5;
   --color-link: #337AB7;
+  --color-navbar: #e76a23;
+  --color-navbar-text: #212528;
 
   --spacing-xs: 4px;
   --spacing-sm: 8px;
@@ -60,6 +62,7 @@ p {
   font-size: 1em;
   z-index: 20;
 }
+.whatsapp__fixed-content::before { content: "Chat"; }
 
 .button {
   background-color: var(--color-primary);
@@ -79,12 +82,13 @@ p {
 }
 .button__form {
   border: none;
-  background-color: white;
+  background-color: var(--color-primary);
   cursor: pointer;
 }
 .button__form:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   color: var(--color-text);
+  /* border: 1px solid var(--color-primary); */
 }
 .button__link{
   color: var(--color-link);
@@ -118,7 +122,8 @@ header {
   align-items: center;
   padding: 10px 5%;
   width: 100%;
-  background-color: var(--color-text);
+  background-color: var(--color-navbar);
+  color: var(--color-navbar-text);
   z-index: 200;
 }
 
@@ -132,7 +137,7 @@ header .menu-toggle {
   cursor: pointer;
   background: none;
   border: none;
-  color: var(--color-primary);
+  color: var(--color-navbar-text);
   z-index: 12;
 }
 
@@ -143,7 +148,8 @@ header .menu-toggle {
   right: -100%;
   width: 100%;
   height: 100%;
-  background-color: var(--color-text);
+  background-color: var(--color-navbar);
+  color: var(--color-navbar-text);
   transition: right 0.3s ease;
   padding: 50px 20px 20px;
   z-index: 10;
@@ -156,14 +162,14 @@ header .menu-toggle {
   list-style: none;
 }
 .mobile-nav a {
-  color: #fff;
+  color: var(--color-navbar-text);
 }
 .mobile-nav.active {
   right: 0;
   z-index: 100;
 }
 .nav_title {
-  color: var(--color-primary);
+  color: var(--color-navbar-text);
   font-size: var(--font-size-subtitle);
   margin: 0 0 6px;
 }
@@ -187,16 +193,16 @@ header .menu-toggle {
 }
 
 .mobile-nav ul {
-  list-style: circle;
+  /* list-style: circle; */
   padding: 0;
 }
 .mobile-nav .list-nav {
   padding-left: 1.5rem;
-  color: white;
+  color: var(--color-navbar-text);
 }
 
 .mobile-nav .section-title {
-  color: #ff8300;
+  color: var(--color-navbar-text);
   font-weight: bold;
   font-size: 1.2em;
   margin: 0 0 6px;
@@ -204,8 +210,9 @@ header .menu-toggle {
 
 /* Navegación principal */
 .site-nav {
-  display: none; /* Cambiado de 'none' para que sea visible */
-  background-color: var(--color-text);
+  display: none;
+  background-color: var(--color-navbar);
+  color: var(--color-navbar-text);
 }
 
 .site-nav__list {
@@ -221,13 +228,13 @@ header .menu-toggle {
 }
 
 .site-nav__link {
-  color: #fff;
+  color: var(--color-navbar-text);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .site-nav__link:hover {
-  color: #ff8300;
+  color: var(--color-bg);
 }
 
 /* Submenú */
@@ -240,7 +247,7 @@ header .menu-toggle {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #111;
+  background-color: var(--color-bg);
   min-width: 200px;
   list-style: none;
   margin: 0;
@@ -253,7 +260,7 @@ header .menu-toggle {
 }
 
 .site-nav__submenu-link {
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -316,11 +323,14 @@ header .menu-toggle {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  color: var(--color-link);
   font-weight: bold;
   font-size: 14px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+}
+.button.submenu-sitio__link{
+  color: var(--color-text);
 }
 
 .submenu-sitio__link:hover {
@@ -373,6 +383,7 @@ section {
   font-weight: 400;
   font-size: var(--font-size-h1);
   line-height: 37px;
+  margin: 1em 0 .5em;
 }
 .course__subtitle {
   margin-bottom: 12px;
@@ -446,6 +457,13 @@ section {
 .bonus__list-course {
   padding-left: 1.2rem;
 }
+.bonus__text{
+  margin-bottom: 1.2em;
+}
+.bonus_link{
+  color: var(--color-text);
+  text-decoration: underline;
+}
 
 /* info-item: texto informativo */
 .info__list {
@@ -494,7 +512,7 @@ section {
 /* Contacto */
 .contact {
   padding: 22px 5%;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   background-color: var(--color-accent);
 }
 .title__section--contact {
@@ -624,10 +642,16 @@ section {
     }
     .course__intro{
         padding: 0;
+        margin-bottom: 1em;
+    }
+    .course__video{
+      width: 60%;
+      /* margin: 0 auto; */
     }
     .course__title{
-        padding-bottom: .4em;
-        border-bottom: 1px solid var(--color-border);
+      margin: 0;
+        /* padding-bottom: .4em; */
+        /* border-bottom: 1px solid var(--color-border); */
     }
     .submenu-sitio__container{
         grid-area: sidebar;
@@ -663,31 +687,42 @@ section {
     font-size: .9rem;
   }
   .whatsapp__fixed{
-    right: 5%;
-    left: auto;
+    right: 50%;
+    left: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    font-size: 2rem;
-    border-radius: 50%;
+    /* width: 80px; */
+    width: fit-content;
+    max-width: 320px;
+    height: 80px;
+    font-size: 4rem;
+    /* border-radius: 50%; */
+    border-radius: 1em;
     /* transition: ; */
     transition: display .4s, background-color 0.3s, color 0.3s;
   }
-  .whatsapp__fixed span{
-    display: none;
-  }
+    /* .whatsapp__fixed span{
+      display: none;
+    } */
+    .whatsapp__fixed-content{
+      font-size: 1.5rem;
+    
+    }
+  .whatsapp__fixed-content::before { 
+    content: "  25% de descuento adicional"; 
+  } 
   .whatsapp__fixed:hover{
     background-color: var(--color-bg-accent);
     color: #28D146;
-    width: fit-content;
-    border-radius: 1em;
+    
+    
   }
-  .whatsapp__fixed:hover span{
+  .whatsapp__fixed-content{
     display: inline-block;
-    font-size: 1.5rem;
-    margin-left: 4px;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    margin-left: 8px;
   }
   .info-item{
     margin-bottom: 16px;
