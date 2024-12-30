@@ -54,7 +54,7 @@ p {
 .whatsapp__fixed {
   position: fixed;
   bottom: 5%;
-  left: calc(50% - 52px);
+  left: calc(50% - 122px);
   background-color: #25d366;
   color: #fff;
   padding: 10px 20px;
@@ -62,8 +62,9 @@ p {
   font-size: 1em;
   z-index: 20;
 }
-.whatsapp__fixed-content::before { content: "Chat"; }
-
+.whatsapp__fixed-content{
+  margin-left: 4px;
+}
 .button {
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -733,11 +734,7 @@ section {
     } */
     .whatsapp__fixed-content{
       font-size: 1.5rem;
-    
     }
-  .whatsapp__fixed-content::before { 
-    content: "  25% de descuento adicional"; 
-  } 
   .whatsapp__fixed:hover{
     background-color: var(--color-bg-accent);
     color: #28D146;
