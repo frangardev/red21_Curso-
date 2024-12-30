@@ -441,8 +441,9 @@ section {
 .course__module-description {
   padding: 0 1.2rem;
   font-size: var(--font-size-text);
+  list-style-type: disc;
   /* line-height: 14px; */
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* Bonus: Cursos adicionales------ */
