@@ -441,7 +441,7 @@ section {
 .course__module-description {
   padding: 0 1.2rem;
   font-size: var(--font-size-text);
-  line-height: 14px;
+  /* line-height: 14px; */
   opacity: 0.8;
 }
 
@@ -470,6 +470,10 @@ section {
   padding: 0;
   list-style-type: none;
 }
+.info__list--bullets{
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
 .info-item {
   margin-bottom: 12px;
 }
@@ -481,7 +485,8 @@ section {
   font-size: var(--font-size-text);
 }
 .info-item__sub-list{
-    padding-left: 1em;
+    padding-left: 1.5em;
+    list-style-type: disc;
 }
 
 /* Testimonios--- */
@@ -546,11 +551,18 @@ section {
   padding: 1em .5em;
   margin-top: .5em;
 }
+/* CTA */
+.cta__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 16vh;
+}
 
-/* Footer */
+/* Footer ------------------ */
 .footer {
   margin: 0;
-  /* padding-top: 12px; */
   text-align: center;
   background-color: var(--color-text);
   color: #fff;
@@ -626,7 +638,7 @@ section {
 /* Responsive Desktop ------------------------------------*/
 @media (min-width: 769px) {
     :root {
-        --font-size-text: .8rem;
+        --font-size-text: 1rem;
     }
     main{
         display: grid; 
@@ -698,14 +710,16 @@ section {
     font-size: .9rem;
   }
   .whatsapp__fixed{
-    right: 50%;
-    left: 50%;
+    /* top: 50%; */
+    bottom: calc(50% - 80px);
+    right: 2%;
+    left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 80px; */
-    width: fit-content;
-    max-width: 320px;
+    width: 240px;
+    /* width: fit-content; */
+    /* max-width: 320px; */
     height: 80px;
     font-size: 4rem;
     /* border-radius: 50%; */
