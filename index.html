@@ -666,23 +666,47 @@
                 <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
                 <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
                 <form class="contact__form" action="https://red21.com/procesodatosalumnos.php" method="POST" name="order">
+                    <!-- Campo oculto: enviado -->
+                    <input type="hidden" name="enviado" value="enviar">
+                
+                    <!-- Nombre -->
                     <label for="name" class="contact__label">Nombre</label>
-                    <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
-
+                    <input id="nomape" name="nomape" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
+                
+                    <!-- Correo -->
                     <label for="email" class="contact__label">Correo</label>
                     <input id="email" name="email" type="email" class="contact__input" placeholder="Ingresa tu correo electrónico" required>
-
+                
+                    <!-- Teléfono -->
                     <label for="phone" class="contact__label">Teléfono</label>
-                    <input id="phone" name="phone" type="tel" class="contact__input" placeholder="Ingresa tu número de teléfono">
-
-                    <!-- Campo oculto que envia la información de que curso --> 
-                    <input type="hidden" name="course" value="Curso Online de Decoración y Diseño de Interiores">
-
+                    <input 
+                        type="tel" 
+                        class="contact__input" 
+                        id="telefono" 
+                        name="telefono" 
+                        placeholder="Ingresa tu número de teléfono" 
+                        title="campo numérico"
+                        pattern="^[0-9\-\+\s\(\)]*$"
+                        required
+                    >
+                
+                    <!-- Campo oculto: curso -->
+                    <input type="hidden" id="curso" name="curso" value="Curso Online de Decoración y Diseño de Interiores">
+                
+                    <!-- País -->
+                    <input type="hidden" id="pais" name="pais" value="Uruguay">
+                
+                    <!-- Becas y descuentos -->
+                    <input type="hidden" name="conocio" value="promo_vigente">
+                
+                    <!-- Mensaje -->
                     <label for="message" class="contact__label">Mensaje</label>
-                    <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
-
-                    <button type="submit" class="button button__form">Enviar</button>
+                    <textarea id="comenta" name="comenta" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
+                
+                    <!-- Botón -->
+                    <button id="button1id" name="button1id" type="submit" class="button button__form">Enviar</button>
                 </form>
+                
             </section>
 
             <!-- Testimonios -->
