@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--INCLUIR AQUI LAS ETIQUETAS META QUE SE PRECISEN-->
-    <title>Curso online de Logística en Uruguay</title>
+    <title>Curso Online de Administración de Empresas</title>
     <meta name="description" content="Conviertete en Experto en Logistica. Curso online personalizado." />
     <meta name="keywords"
         content="curso a distancia Logistica, curso online Logistica, cursos por internet Logistica, cursos online de Logistica, estudiar a distancia, curso a distancia de Logistica, cursos distancia Logistica, curso Logistica" />
@@ -27,9 +27,9 @@
 
     <!-- Preloading Fonts and Stylesheets -->
     <link rel="preload" href="assets/fonts/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
+    <noscript>
         <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-</noscript>
+    </noscript>
     <!-- <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
      <!-- Estilios personalizado -->
     <link rel="stylesheet" href="./styles.css">
@@ -139,12 +139,7 @@
     </style>
 
     <!-- JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script defer src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script defer src="assets/js/aos.js"></script>
-    <script src="assets/js/w3data.js" type="text/javascript"></script>
-    <script async src="assets/js/bundle.w3data.js"></script>
-    <script defer src="assets/js/jquery.nivo.slider.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./ofertas.js" defer></script>
 </head>
 
 <body>
@@ -326,14 +321,15 @@
             alt="Icono de WhatsApp"
             >
             <i class="fa-brands fa-whatsapp"></i> 
-            <span class="whatsapp__fixed-content"> 75% de Descuento Escríbenos</span></a>
+            <span class="whatsapp__fixed-content" id="btnWhatsApp"></span></a>
          
         <!-- Header (slider, titulo) -->
         <section class="course" >
+            <!-- <img class="course__video" src="/assets/img/curso-online-de-administracion-de-empresas.webp" alt="curso online de administracion de empresas" longdesc="curso online decoracion"> -->
             <img class="course__video" src="https://cursosadistancia.com.uy/assets/img/curso-online-distancia-logistica.webp" alt="Video sobre los cursos de red21" longdesc="curso online decoracion">
             <div class="course__intro">
-                <h1 class="course__title">Curso Online de Logística</h1>
-                <p class="info-item__big">Si te inscribes antes del 9/1/2025 , participas de la promoción Año Nuevo 2025                </p>
+                <h1 class="course__title">Curso Online de Administración de Empresas</h1>
+                <p class="info-item__big" id="txtAbajoTitulo"></p>
             </div>
         </section>
 
@@ -368,7 +364,11 @@
                     <span><i class="fa fa-compass encabezado-preguntas-fa"></i> </span>
                     Objetivos                </h2>
                 <ul class="info__list info__list--bullets">
-                    <li class="info-item info-item__small">Serás capaz de diseñar e implementar planes de Logística para cualquier tipo de empresa.</li>
+                    <li class="info-item info-item__small">Adquirir habilidades de liderazgo y gestión que permitan lograr los objetivos empresariales</li>
+                    <li class="info-item info-item__small">Desarrollar una base sólida de los fundamentos comerciales de finanzas, recursos humanos, marketing, operaciones y gestión administrativa.</li>
+                    <li class="info-item info-item__small">Fomentar habilidades de pensamiento crítico analizando problemas empresariales desde múltiples perspectivas.</li>
+                    <li class="info-item info-item__small">Desarrollar las habilidades de comunicación, para transmitir ideas de manera efectiva y colaborar con otros.</li>
+                    <li class="info-item info-item__small">Aprender a utilizar Inteligencia Artificial para mejorar el desempeño personal y empresarial.</li>
                 </ul>
             </section>
 
@@ -384,141 +384,73 @@
             <section class="course__contesnt" id="s-div1">
                 <h2 class="title__section"> <span><i class="fa fa-graduation-cap"></i></span> Contenido del curso</h2>
                 <!-- Módulos del curso-->
-                <h3 class="course__sub-title">Primera parte</h3>
                 <ul class="course__module-list">
                     <li class="course__module">
-                        <h4 class="course__module-title">Gestión Logística</h4>
+                        <h3 class="course__module-title"><span class="course__module-tag">1</span>La empresa actual</h3>
                         <ul class="course__module-description">
-                            <li>Qué es la Logística. Funciones de la logística. Concepto de SCM.</li>
-                            <li>Servicio al cliente: Definición de Servicio al cliente. La imagen de la empresa.</li>
-                            <li>Orientación al cliente externo: Atención al cliente y Calidad de Servicios. Interacción y conocimiento del Cliente. Garantía de Servicio.</li>
-                            <li>Satisfacción del cliente. La comunicación. CRM: Manejo de las relaciones con los clientes.</li>
-                            <li>La demanda: Predicción y Pronóstico. Diferencias. Tipos de pronósticos y predicciones.</li>
-                            <li>Registro de productos: Inventarios. Tipos de inventario. Gestión del inventario.</li>
-                            <li>El transporte: Tipos y funciones del transporte. Variables que definen el costo del transporte. Cómo elegir el medio de transporte.</li>
-                            <li>Logística Inversa: Las devoluciones. La retroalimentación de la devolución.</li>
+                            <li>Concepto de empresa.</li>
+                            <li>Fundamentos de la administración.</li>
                         </ul>
-                    </li>
+                    </li>                                          
                     <li class="course__module">
-                        <h4 class="course__module-title">El transporte</h4>
+                        <h3 class="course__module-title"><span class="course__module-tag">2</span>La dirección de la empresa</h3>
                         <ul class="course__module-description">
-                            <li>El transporte: La contratación, planificación de cargas y rutas. Parámetros de control. Prevención de riesgos laborales. Organización y dirección. Tipos de seguros y coberturas.</li>
-                            <li>Logística de productos refrigerados o con temperatura estable: La cadena logística a temperatura estable. El envasado (packaging) de los productos. La cadena del frío. Tipos de distribución y cómo trasladar mercadería a temperatura estable.</li>
-                            <li>Almacén y depósitos: Funciones de los almacenes (Recepción, almacenamiento, control, envío, acciones de valor agregado, etc). Tipos de almacenes. Ubicación de los almacenes. Confección de pedidos. Maquinaria de manejo y traslado interno de productos. Automatización. Identificación y captura de datos. Códigos de barras y otros sistemas.</li>
-                            <li>Seguridad: Prevención de riesgos laborales. Legislación sobre el traslado de mercadería peligrosa. Cómo actuar ante accidentes o incidentes.</li>
-                            <li>Estándares Internacionales de Logística: EAN GTIN Internacional. EDI Electronic Data Interchange Escenarios.</li>
+                            <li>Dirección estratégica.</li>
+                            <li>Liderazgo integral.</li>
+                            <li>Organización de tareas.</li>
                         </ul>
-                    </li>
+                    </li>                                          
                     <li class="course__module">
-                        <h4 class="course__module-title">Calidad Total</h4>
+                        <h3 class="course__module-title"><span class="course__module-tag">3</span>Marketing</h3>
                         <ul class="course__module-description">
-                            <li>Qué es la gestión de calidad total. Normas (SGC, SGA, SST). Las certificaciones (9000, 14000, 18000).</li>
-                            <li>Componentes de un Sistema de Gestión de Calidad.</li>
+                            <li>Análisis de mercado.</li>
+                            <li>Estrategias de precios.</li>
+                            <li>Marketing digital. Promoción y publicidad.</li>
                         </ul>
-                    </li>
+                    </li>                                          
                     <li class="course__module">
-                        <h4 class="course__module-title">Comercio Exterior</h4>
+                        <h3 class="course__module-title"><span class="course__module-tag">4</span>Dirección comercial</h3>
                         <ul class="course__module-description">
-                            <li>Procedimiento de compra-venta del comercio internacional. Logística para exportadores e importadores.</li>
-                            <li>Aduana. Operaciones aduaneras (Exportaciones, Importaciones, Admisión Temporaria, etc).</li>
-                            <li>Documentación. Formas de Pago. Transferencias, notas de crédito, e-commerce, etc.</li>
+                            <li>Ventas. Técnicas de venta.</li>
+                            <li>Calidad de atención y servicio al cliente.</li>
+                            <li>Liderazgo comercial.</li>
                         </ul>
-                    </li>                                                
+                    </li>                                          
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">5</span>Recursos humanos</h3>
+                        <ul class="course__module-description">
+                            <li>Selección de personal.</li>
+                            <li>Dirección y desarrollo de equipos de trabajo.</li>
+                            <li>Gestión del tiempo.</li>
+                            <li>Motivación y liderazgo.</li>
+                        </ul>
+                    </li>                                          
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">6</span>Operaciones</h3>
+                        <ul class="course__module-description">
+                            <li>Contabilidad</li>
+                            <li>Gestión de calidad total. Las certificaciones. Normas ISO.</li>
+                            <li>Logística.</li>
+                            <li>Planificación empresarial. Gestión de Proyectos.</li>
+                        </ul>
+                    </li>                                          
+                    <li class="course__module">
+                        <h3 class="course__module-title"><span class="course__module-tag">7</span> Inteligencia Artificial</h3>
+                        <ul class="course__module-description">
+                            <li>Identificar las principales tecnologías de IA y sus aplicaciones en el ámbito empresarial.</li>
+                            <li>Analizar los beneficios y desafíos de la implementación de la IA en la empresa.</li>
+                            <li>Conocer casos prácticos de aplicación de la IA en diferentes áreas de la empresa.</li>
+                            <li>Desarrollar habilidades para evaluar y seleccionar las herramientas de IA más adecuadas para cada necesidad.</li>
+                        </ul>
+                    </li>  
+                    <li class="info-item__small"><strong>Recibirás el curso complementario</strong>: <a href="curso_online_como_aplicar_inteligencia_artificial.htm" target="_blank">Inteligencia Artificial aplicada en la empresa</a> </li>                                        
                 </ul>
-
-                <h3 class="course__sub-title">Segunda parte</h3>
-                <ul class="course__module-list">
-                    <li class="course__module">
-                        <h4 class="course__module-title">Recursos Humanos</h4>
-                        <ul class="course__module-description">
-                            <li>Orígenes y evolución de los recursos humanos.</li>
-                            <li>Selección de personal. Dirección y desarrollo de equipos de trabajo. Gestión del rendimiento.</li>
-                            <li>Gestión del tiempo. Características legales de los recursos humanos.</li>
-                            <li>El aprendizaje continuo en la empresa. Motivación y liderazgo. La comunicación. Habilidades directivas.</li>
-                            <li>Prevención de riesgos laborales.</li>
-                            <li>Globalización. Teletrabajo.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">Compras</h4>
-                        <ul class="course__module-description">
-                            <li>Gestión de compras. Estrategias de compras. Etapas de la compra: selección, definición, negociación y formas de pago. Registro de las compras.</li>
-                            <li>Planificación de la necesidad de insumos. Planificación de necesidad de materiales (MRP). Planificación Justo a Tiempo (JIT).</li>
-                            <li>Gestión de proveedores. Tipos de proveedores. Llamados a licitaciones. Evaluación de proveedores.</li>
-                        </ul>
-                    </li>                    
-                    <li class="course__module">
-                        <h4 class="course__module-title">Logística de Grandes Superficies</h4>
-                        <ul class="course__module-description">
-                            <li>Definición de grandes superficies. Evolución de supermercadismo.</li>
-                            <li>Los proveedores.</li>
-                            <li>Logística interna. La cadena logística del supermercadismo. Las franquicias de otras empresas dentro de la logística de un hipermercado.</li>
-                            <li>Logísticas complementarias. Posibles conflictos.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">Logística del Comercio Electrónico</h4>
-                        <ul class="course__module-description">
-                            <li>Identificación de las necesidades logísticas del Ecommerce.</li>
-                            <li>La gestión práctica del almacenaje y la distribución del producto.</li>
-                            <li>Caso real: Cómo elegir un sistema de información logístico.</li>
-                            <li>La relación con las empresas de transporte.</li>
-                            <li>La posibilidad de tercerizar los servicios de logística de Ecommerce.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">Costos Logísticos</h4>
-                        <ul class="course__module-description">
-                            <li>Costos de Aprovisionamiento y Almacenaje. Costos de transporte.</li>
-                            <li>Otros costos. Gestión y control de costos. Tipos de Costos.</li>
-                            <li>Sistemas de Costos.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">Control de Almacenamiento e Inventarios</h4>
-                        <ul class="course__module-description">
-                            <li>Rol de los inventarios. Tipos de inventarios.</li>
-                            <li>Gestión de Inventarios. Clasificación de inventarios. Cantidades de pedidos: Modelo EOQ Stock de reserva.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">La Producción</h4>
-                        <ul class="course__module-description">
-                            <li>Gestión de la producción. Métodos de programación. Distribución física.</li>
-                            <li>Sistemas de distribución física. Etapas de un pedido. Los canales de distribución. La tercerización. Las devoluciones: Logística inversa.</li>
-                            <li>Localización de un centro de distribución. Factores que inciden sobre la localización. Cómo elegir la mejor ubicación.</li>
-                            <li>Transporte. El transporte dentro de los centros de almacenamiento. Gestión del transporte.</li>
-                            <li>Uso de medios de transporte. Planificación de recorridos y tipos de transporte.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">Logística: Infraestructura</h4>
-                        <ul class="course__module-description">
-                            <li>Transporte. Almacenaje. Depósitos. Logística inversa.</li>
-                            <li>Comercio exterior: Importación y exportación. Documentos y métodos de pago. Incoterms 2000.</li>
-                            <li>Cotizaciones. Transporte. Instrucciones de embarque. Seguimiento.</li>
-                            <li>Manejo de problemas. Servicio al cliente.</li>
-                            <li>Herramientas de gestión comercial. Relaciones con fabricantes / distribución.</li>
-                        </ul>
-                    </li>
-                    <li class="course__module">
-                        <h4 class="course__module-title">Logística: Inteligencia Artificial</h4>
-                        <ul class="course__module-description">
-                            <li>Transporte. Optimización de Rutas de Transporte.</li>
-                            <li>Gestión de Inventarios Inteligente.</li>
-                            <li>Automatización de Almacenes.</li>
-                            <li>Monitoreo Predictivo y Mantenimiento de Flotas.</li>
-                            <li>Análisis y Optimización de la Cadena de Suministro.</li>
-                        </ul>
-                    </li>                                                                                                                                            
-                </ul>
-                
             </section>
 
             <!-- Cursos adicionales -->
             <section class="bonus">
                 <div class="bonus__content">
-                    <h2 class="bonus__title">Si te inscribes antes del 9/1/2025 , recibirás un descuento del 75% + cursos complementarios gratuitos                    </h2>
+                    <h2 class="bonus__title" id="txtAbajoTemario"></h2>
                     <p class="info-item__big bonus__text">
                         Para solicitar un enlace de pago escribenos desde nuestro formulario: 
                         <a class="button__link bonus_link" href="#s-div6">clic aquí</a> o por 
@@ -532,10 +464,8 @@
                     <span><i class="fa fa-cog encabezado-preguntas-fa"></i> </span> 
                     ¿Cómo funciona?                </h2>
                 <ul class="info__list info__list--bullets">
-                    <li class="info-item__small">El curso es a través de Internet en la modalidad de <strong>curso online</strong>.</li>
-                    <li class="info-item__small"><strong>El contenido se configura de acuerdo a los conocimientos previos que
-                            tengas</strong>, así como al tipo de computadora, tablet o móvil que utilices.
-                    </li>
+                    <li class="info-item__small">El curso es en la modalidad de <strong>curso online</strong>.</li>
+                    <li class="info-item__small"><strong>El contenido formativo es personalizado: </strong>se configura de acuerdo a los conocimientos previos y objetivos personales.                                </li>
                     <li class="info-item__small">cursarás desde nuestra aula virtual desde cual tendrás
                         acceso a las <strong>lecciones, videos, libros electrónicos, ejercicios y prácticas
                             sobre casos reales.</strong></li>
@@ -543,31 +473,38 @@
                         <strong>en cualquier horario y todos los días de la semana (24 hs)</strong>.</li>
                     <li class="info-item__small"><strong>Aprenderás a tu ritmo</strong>. Para culminar el curso tienes un plazo de un
                         año desde la fecha de comienzo.</li>
+                    <li class="info-item__small">Puedes contactar a los tutores todos los días de lunes a domingo de 11 a 21 hs.</li>
                 </ul>
                 <ul class="info__list">
                     <li class="info-item">
                         <h3 class="info-item__big">Duración</h3>
-                        <p class="info-item__small">5 meses. Comienzo: Inmediato.</p>
-                        <p class="info-item__small">Modalidad intensiva: 2 o 3 meses.</p>
-                        <p class="info-item__small">Cantidad de horas en ambas modalidades: 160 horas.</p>
+                        <p class="info-item__small">10 meses. Comienzo: Inmediato.</p>
+                        <p class="info-item__small">Modalidad intensiva: 5 meses.</p>
+                        <p class="info-item__small">Cantidad de horas en ambas modalidades: 250 horas.</p>
+
                     </li>
                     <li class="info-item">
                         <h3 class="info-item__big">Certificación</h3>
-                        <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso emitido por la Distance Learning Red21.com Corporate System reconocido por las principales empresas bajo la modalidad de enseñanza privada. A continuación un ejemplo de un certificado. <a class="button__link" href="https://red21.com/assets/img/D_Logistica.jpg" target="_blank" rel="noopener noreferrer">Ejemplo del certificado</a></p>
+                        <p class="info-item__small text_margin-b">Al finalizar el curso de Administración de Empresas recibirás la certificación de <strong>Técnico en Administración de Empresas </strong>(250 horas) emitido por la <strong>Distance Learning Red21.com Corporate System.</strong></p>
+                        <p class="info-item__small">Al aprobar la prueba final, recibirás un certificado de Aprobación del curso
+                            emitido por la <strong>Distance Learning Red21.com Corporate System </strong>reconocido
+                            por las principales empresas bajo la modalidad de enseñanza privada. A continuación un
+                            ejemplo de un certificado. <a class="button__link" href="https://red21.com/assets/img/D_Administracion-de-Empresa.jpg" target="_blank" rel="noopener noreferrer">Ejemplo del certificado</a></p>
                     </li>
                 </ul>
-
             </section>
 
             <!-- Beneficios -->
             <section class="benefits" id="s-div3">
                 <h2 class="title__section">
-                    <span><i class="fa fa-star encabezado-preguntas-fa"></i></span> 
-                    Beneficios                </h2>
+                    <span><i class="fa fa-star encabezado-preguntas-fa"></i></span>
+                    Beneficios
+                </h2>
                 <ul class="info__list info__list--bullets">
-                    <li class="info-item__small"><strong>Comienzo inmediato:</strong> Comenzarás el curso al día siguiente de la fecha de inscripción.</li>
-                    <li class="info-item__small">El <strong>título final</strong> a obtener es de<span style="font-weight: bold;">Técnico en Logística.</span></li>
+                    <li class="info-item__small"><strong>Comienzo inmediato:</strong> Comenzarás el curso al día siguiente de la fecha de inscripción o el día que  prefieras.</li>
+                    <li class="info-item__small">El <strong>título final</strong> a obtener es de<span style="font-weight: bold;">Técnico en Administración de Empresas.</span></li>
                     <li class="info-item__small"><strong>Aprende a tu ritmo</strong>: No necesitas estar conectado a una determinada hora. <strong>Puedes tomar las lecciones en cualquier horario y todos los días de la semana, las 24 horas.</strong></li>
+                    <li class="info-item__small">Recibirás el  <strong>curso complementario: </strong><a href="curso_online_como_aplicar_inteligencia_artificial.htm" target="_blank">Inteligencia Artificial aplicada en la empresa</a>.</li>
                 </ul>
             </section>
 
@@ -578,67 +515,63 @@
                     Formas de pago e inscripción                </h2>
                 <ul class="info__list info__list--inscription">
                     <li class="info-item">
-                        <h3 class="info-item__big">Formas de Pago en Uruguay</h3>
+                        <h3 class="info-item__big">Formas de Pago</h3>
                         <ul class="info-item__sub-list">
-                            <li class="info-item__small"><b>Tarjetas de crédito: OCA, Visa y Mastercard (Para Mastercard solicitar enlace de pago)</b></li>
-                            <li class="info-item__small"><b>Transferencia o depósito bancario:</b> Haciendo transferencias desde tu computadora o un depósito en cajero a una <b>cuenta BBVA</b></li>
-                            <li class="info-item__small"><b>Redes de Cobranzas: Abitab y Redpagos</b></li>
-                            <li class="info-item__small">Transferencia por Paypal</li>
+                            <li class="info-item__small"><strong>Tarjetas de cr&eacute;dito: OCA, </strong><strong>Visa,</strong> <strong>Mastercard, Diners, Lider. Tarjetas de debito: Visa </strong></span></li>
+                            <li class="info-item__small"><strong>Transferencia o deposito bancario</strong></li>
+                            <li class="info-item__small"><strong>Redes de Cobranzas: Abitab y Redpagos</strong></span></li>
                         </ul>
                     </li>
                     <li class="info-item">
                         <h3 class="info-item__big"><i class="fa-solid fa-dollar-sign"></i> Condiciones de Pago</h3>
                         <ul class="info-item__sub-list">
-                            <li class="info-item__small">Costo total: $ 16.490  </li>
-                            <li class="info-item__small">Costo total con descuento del 40% incluido: 9.894 $ <a
-                                        href="https://cursosonline21.com/formulariopago5.php?curso=Logistica&pago=$ 9.894 $">Pagar</a></li>
+                            <li class="info-item__small" id="costoTotal">Costo total: $ 41.790 </li>
+                            <li class="info-item__small"><strong id="costoConDescuento"></strong> <a
+                                href="https://cursosonline21.com/formulariopago5.php?curso=Administracion de empresas&pago=$ 12.537 UY">Pagar</a> </li>
                         </ul>
                     </li>
                     <li class="info-item info-item__big destacado">                  
-                        <p>Si te inscribes antes del           10/1/2025    ,
-                            recibirás un descuento del 40%</span><br>
+                        <p><span id="txtFormasDePago"></span><br>
                              Para solicitar un enlace de pago escribenos desde nuestro formulario: <a
                             href="#s-div9" class="page-scroll">clic aquí.</a> o por <a href="https://api.whatsapp.com/send?phone=59892385824">WhatsApp</a>.</strong></p>
                     </li>
                     <li class="info-item">
                         <h3 class="info-item__big"><i class="fa-solid fa-credit-card"></i> Financiación</h3>
+                        <p class="info-item__small text_margin-b">Puedes inscribirte mediante las tarjetas de crédito <strong>OCA, Mastercard, Visa o Abitab, Redpagos o transferencia bancaria </strong>según los siguientes planes de pago:</p>
+                        <p class="info-item__small text_margin-b">Todos los planes son de cuotas iguales sin intereses o cargos adicionales. </p>
+                        
                         <ul class="info-item__sub-list">
-                            <li class="info-item__small"><b>Plan 1:</b> 2 cuotas de 4.947 $ <a
-                                href="https://cursosonline21.com/formulariopago5.php?curso=Logistica=$ 8.663 $ UY"></a><a
-                                href="https://cursosonline21.com/formulariopago5.php?curso=Logistica&pago=$ 4.947 $">Pagar</a></li>
-                            <li class="info-item__small"><b>Plan 2:</b> 3 cuotas de 3.298 $  <a
-                                href="https://cursosonline21.com/formulariopago5.php?curso=Logistica&pago=$ 3.298 $">Pagar</a></li>
-                            <li class="info-item__small"><b>Plan 3:</b> 4 cuotas de 2.474 $  <a
-                                href="https://cursosonline21.com/formulariopago5.php?curso=Logistica&pago=$ 2.474 $">Pagar</a></li>
-                            <li class="info-item__small"><b>Plan 4:</b> 6 cuotas de 1.649 $  <a
-                                href="https://cursosonline21.com/formulariopago5.php?curso=Logistica&pago=$ 1.649 $">Pagar</a></li>
+                            <li class="info-item__small"><strong>Plan 1:</strong> <br>
+                                2 cuotas de 6.269 $  <a
+                                      href="https://cursosonline21.com/formulariopago5.php?curso=Administracion de empresas&pago=$ 6.269 $ UY">Pagar</a></li>
+                            <li class="info-item__small"><strong>Plan 2:</strong> <br>
+                                3 cuotas de 4.179 $ <a
+                                    href="https://cursosonline21.com/formulariopago5.php?curso=Administracion de empresas&pago=$ 4.179 $ UY">Pagar</a></li>
+                            <li class="info-item__small"><strong>Plan 3:</strong> <br>
+                                4 cuotas de 3.135 $  <a
+                                    href="https://cursosonline21.com/formulariopago5.php?curso=Administracion de empresas&pago=$ 3.135 $ UY">Pagar</a></li>
+                            <li class="info-item__small"><strong>Plan 4:</strong> <br>
+                                6 cuotas de 2.090 $  <a
+                                    href="https://cursosonline21.com/formulariopago5.php?curso=Administracion de empresas&pago=$ 2.090 $ UY">Pagar</a></li>
+                            <li class="info-item__small"><strong>Plan 5:</strong> <br>
+                                8 cuotas de 1.568 $   <a
+                                    href="https://cursosonline21.com/formulariopago5.php?curso=Administracion de empresas&pago=$ 1.568 $ UY">Pagar</a> </li>
                         </ul>
                     </li>
                     <li class="info-item">
                       <p class="info-item__small"><b><span class="text-red">Importante</span>:</b> <strong>Con tarjetas OCA, Visa y Mastercard puedes pagar hasta en 12 cuotas sin recargo </strong>. <a href="#s-div9">Solicita más información.</a></p>
                     </li>
                     <li class="info-item">
-                        <h3 class="info-item__big">Depósito o Transferencia Bancaria</h3>
-                        <p class="info-item__small"><strong>BANCO BBVA</strong> o <strong>BROU</strong></p>
-                        <p class="info-item__small">Depósito o transferencia bancaria en la siguiente cuenta:</p>
-                        <ul class="info-item__sub-list">
-                            <li class="info-item__small">Solicita más información para realizar la transferencia completando el siguiente formulario. <a class="button__link" href="#s-div9" class="page-scroll">Clic aquí</a></li>
-                        </ul>
+                        <h3 class="info-item__big">Transferencia Bancaria</h3>
+                        <p class="info-item__small text_margin-b"><strong>BANCO BBVA</strong> o <strong>BROU</strong></p>
+                        <p class="info-item__small">Solicita más información para realizar la transferencia completando el siguiente formulario. <a class="button__link" href="#s-div9" class="page-scroll">Clic aquí</a></p>
+                        <p class="info-item__small">Planes vigentes : Hasta en 8 cuotas.</p>
                     </li>
 
                     <li class="info-item">
-                        <h3 class="info-item__big">Transferencias ABITAB o RED PAGOS</h3>
-                        <ul class="info-item__sub-list">
-                          <li class="info-item__small">Solicita más información para realizar la transferencia completando el siguiente formulario. <a class="button__link" href="#s-div9" class="page-scroll">Clic aquí</a></li>
-                        </ul>
-                    </li>
-                    <li class="info-item">
-                    </li>
-                    <li class="info-item">
-                        <h3 class="info-item__big"><i class="fa-brands fa-paypal"></i> Pagar con Paypal</h3>
-                        <ul class="info-item__sub-list">
-                            <li class="info-item__small">Para pagar con Paypal, solicita el enlace de pago correspondiente respondiendo el correo que se envió. Debes indicar el plan de pago que prefieres. También puedes indicarlo desde nuestro formulario de atención al usuario: <a class="button__link" href="#s-div9" class="page-scroll" target="_blank">clic aquí</a>.</li>
-                        </ul>
+                        <h3 class="info-item__big text_margin-b">Transferencias ABITAB o RED PAGOS</h3>
+                        <p class="info-item__small">Solicita más información para realizar la transferencia completando el siguiente formulario. <a class="button__link" href="#s-div9" class="page-scroll">Clic aquí</a></p>
+                        <p class="info-item__small">Planes vigentes : Hasta en 8 cuotas.</p>
                     </li>
                 </ul>
             </section>
@@ -648,7 +581,7 @@
             <section class="contact" id="s-div6">
                 <h2 class="title__section title__section--contact">¿Tienes alguna duda?</h2>
                 <p class="info-item__big">Estamos aquí para ayudarte. Comunícate con un asesor y obtén toda la información que necesitas.</p>
-                <form class="contact__form" action="https://red21.com/procesodatosalumnos.php" method="POST" name="order">
+                <form class="contact__form" action="https://red21.com/procesodatosalumnos.php" method="POST" name="order" id="miFormulario">
                     <!-- Campo oculto: enviado -->
                     <input type="hidden" name="enviado" value="enviar">
                 
@@ -674,7 +607,7 @@
                     >
                 
                     <!-- Campo oculto: curso -->
-                    <input type="hidden" id="curso" name="curso" value="Curso Online de Logística">
+                    <input type="hidden" id="curso" name="curso" value="">
                 
                     <!-- País -->
                     <input type="hidden" id="pais" name="pais" value="Uruguay">
@@ -690,6 +623,8 @@
                     <button id="button1id" name="button1id" type="submit" class="button button__form">Enviar</button>
                 </form>
             </section>
+
+            <!-- Confían en Red21 -->
             <section>
                 <!-- carusel de empresas afiliadas-->
                <div class="carousel">
@@ -738,49 +673,54 @@
 
                 <!-- Testimonios -->
                 <blockquote class="testimonials__quote">
-                    <p class="info-item__big">“Excelente atención de los tutores y curso muy bien diseñado. Tomare otros ya que mi empresa ha impulsado el teletrabajo y la automatización de procesos logísticos ".</p>
+                    <p class="info-item__big">“Para mi, resulto una muy buena capacitación que se adapto a mis conocimientos previos que eran muy pocos o cero. Ya estoy trabajando en UPM en el departamente de administración central. ".</p>
                     <footer class="testimonials__author">
                         <p>
-                            <span>Mauro Hernandez,</span> 
+                            <span>Marcelo Taranco,</span> 
                             <span>Montevideo, Uruguay.</span>                        </p>
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    </footer>
+                            alt="starts">                    
+                    </footer>
                 </blockquote>
                 <blockquote class="testimonials__quote">
-                    <p class="info-item__big">“Muy buen curso online de logística. Para mi fue práctico y personalizado. Estoy muy satisfecho de haber recibido el certificado".</p>
+                    <p class="info-item__big">“Muy buen curso online, práctico y personalizado. Estoy muy contenta de haber recibido el certificado. Estoy teletrabajando en administración interna para una empresa de España".</p>
                     <footer class="testimonials__author">
                         <p>
-                            <span>Carmen Roca,</span> 
-                            <span>Colonia, Uruguay.</span>                        </p>
+                            <span>Martha Obaldi,</span> 
+                            <span>Canelones, Uruguay.</span>                        </p>
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    </footer>
+                            alt="starts">                    
+                    </footer>
                 </blockquote>
                 <blockquote class="testimonials__quote">
-                    <p class="info-item__big">“Para mi resulto una muy buena capacitación que se adapto a mis conocimientos previos que eran muy pocos, por no decir cero. Ya estoy trabajando en nuevos proyectos de Logìstica donde estoy aplicando lo aprendido. Muchas gracias".</p>
+                    <p class="info-item__big">“Excelente atención de los tutores y curso online de administración de empresas muy bien diseñado. Tomare otros, ya que mi empresa ha impulsado el trabajo descentralizado y que aprendamos online".</p>
                     <footer class="testimonials__author">
                         <p>
-                            <span>Marcos Sposito,</span> 
+                            <span>Fernando Riquelme,</span> 
                             <span>Maldonado, Uruguay.</span>                        </p>
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    </footer>
+                            alt="starts">                    
+                    </footer>
                 </blockquote>
                 <blockquote class="testimonials__quote">
-                    <p class="info-item__big">“Excelente curso online de procesos de logìstica. Està muy bien diseñado de acuerdo a las necesidades actuales de las empresas ".</p>
+                    <p class="info-item__big">“El curso se adapto a mi escaso tiempo libre ya que tengo un hijo pequeño. Pude continuar formandome para progresar en mi trabajo. Muchas gracias al apoyo de los tutores".</p>
                     <footer class="testimonials__author">
                         <p>
-                            <span>Miguel Ramirez,</span> 
-                            <span>Paso de los Toros, Uruguay.</span>                        </p>
+                            <span>Tatiana Ordoñez,</span> 
+                            <span>Paysandu, Uruguay.</span>                        </p>
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    </footer>
+                            alt="starts">                    
+                    </footer>
                 </blockquote>
+
             </section>
 
             <!-- CTA -->
@@ -855,13 +795,30 @@
         }
     });
 
+    // Agregar automaticamente el campo curso al formulario ------
+    document.addEventListener('DOMContentLoaded', (event) => {  
+        let pageTitle = document.title; 
+        let cursoInput = document.querySelector('#curso');  
+        if (cursoInput) { cursoInput.value = pageTitle; } 
+    });
+
+    // Agrega los textos de las ofertas del archivo ofertas.js ------
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('btnWhatsApp').innerText = ofertaWhatsApp; 
+        document.getElementById('txtAbajoTitulo').innerText = ofertaAbajoTitulo; 
+        document.getElementById('txtAbajoTemario').innerText = ofertaAbajoTemario; 
+        document.getElementById('txtFormasDePago').innerText = ofertaFormasDePago;
+        const costoTotalElemento = document.getElementById('costoTotal').innerText; const costoTotal = parseFloat(costoTotalElemento.replace(/[^0-9.-]+/g, ""));  
+        const costoConDescuento = costoTotal * (1 - descuento / 100); 
+        document.getElementById('costoConDescuento').innerText = 
+            `Costo total con descuento del ${descuento}% incluido: $ ${costoConDescuento.toFixed(2)}`;
+    });
 
   // Lógica del carrusel ---------
     const track = document.querySelector('.carousel-track');
     const items = Array.from(track.children);
     const dotsContainer = document.querySelector('.carousel-dots');
     let currentIndex = 0;
-
     // Clonar elementos para crear el efecto infinito
     function cloneItems() {
     const clonesStart = items.slice(0, itemsPerView()).map(item => item.cloneNode(true));
@@ -869,7 +826,6 @@
     clonesStart.forEach(clone => track.appendChild(clone));
     clonesEnd.reverse().forEach(clone => track.insertBefore(clone, track.firstChild));
     }
-
     // Obtener cuántas imágenes mostrar según el ancho del viewport
     function itemsPerView() {
     if (window.innerWidth <= 480) return 1;
@@ -877,13 +833,11 @@
     if (window.innerWidth <= 1200) return 4;
     return 5;
     }
-
     // Ajustar ancho y posición inicial del carrusel
     function setupCarousel() {
     const itemWidth = items[0].getBoundingClientRect().width;
     track.style.transform = `translateX(${-itemWidth * itemsPerView()}px)`;
     }
-
     // Crear puntos de navegación
     function createDots() {
     dotsContainer.innerHTML = '';
@@ -894,7 +848,6 @@
         dotsContainer.appendChild(button);
     });
     }
-
     // Mover el carrusel al índice especificado
     function moveToIndex(index) {
     const itemWidth = items[0].getBoundingClientRect().width;
@@ -904,15 +857,12 @@
         dot.classList.toggle('active', i === index);
     });
     }
-
     // Autoplay
     function autoplay() {
     currentIndex = (currentIndex + 1) % items.length;
     moveToIndex(currentIndex);
     }
-
     let interval = setInterval(autoplay, 3000);
-
     // Resetear posición para efecto infinito
     track.addEventListener('transitionend', () => {
     if (currentIndex === items.length) {
@@ -925,7 +875,6 @@
         setupCarousel();
     }
     });
-
     // Puntos de navegación
     dotsContainer.addEventListener('click', e => {
     if (!e.target.matches('button')) return;
@@ -935,7 +884,6 @@
     moveToIndex(currentIndex);
     interval = setInterval(autoplay, 3000);
     });
-
     // Escuchar cambios de tamaño de ventana
     window.addEventListener('resize', () => {
     clearInterval(interval);
@@ -943,12 +891,10 @@
     setupCarousel();
     interval = setInterval(autoplay, 3000);
     });
-
     // Inicializar carrusel
     cloneItems();
     setupCarousel();
     createDots();
-
 </script>
 
 </html>

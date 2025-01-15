@@ -33,6 +33,7 @@
   --spacing-submenu-sitio-items: 10px;
   --spacing-testimonios: 12px 0 6px;
   --spacing-carousel-items: 0 12px 16px 0;
+  --spacing-text: 12px;
 
   /* Decoraciones */
   --border-radius: 4px;
@@ -529,7 +530,9 @@ section {
   padding-left: 1.5em;
   list-style-type: disc;
 }
-
+.text_margin-b{
+  margin-bottom: var(--spacing-text);
+}
 /* Testimonios--- */
 
 .testimonials__quote {
