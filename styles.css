@@ -1,29 +1,46 @@
 /* Variables */
 :root {
-  --font-primary: "Helvetica Neue",Helvetica, Arial, sans-serif;
+  /* Tipografía */
+  --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-text: 0.75rem;
+  --font-size-subtitle: 1rem;
+  --font-size-subtitle-section: 1.4rem;
+  --font-size-title: 1.5rem;
+  --font-size-h1: 2rem;
+
+  /* Colores */
   --color-primary: #e76a23;
-  --color-secondary: #feb201;
   --color-accent: #feb201;
   --color-text: #212528;
   --color-bg: #ffffff;
   --color-border: #bfbfbf;
   --color-bg-accent: #f5f5f5;
-  --color-link: #337AB7;
+  --color-link: #337ab7;
   --color-navbar: #feb201;
   --color-navbar-text: #212528;
 
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
+  /* Espaciado */
+  --spacing-h1: 1em 0 0.5em;
+  --spacing-modulos: 12px;
+  --spacing-modulos-items: 0;
+  --spacing-section: 40px;
+  --spacing-titulos: 25px;
+  --spacing-listas-top: 14px;
+  --spacing-listas-bottom: 14px;
+  --spacing-listas-items: 0;
+  --spacing-listas-titles: 0 0 12px;
+  --spacing-formas-de-pago: 35px;
+  --spacing-submenu-sitio-items: 10px;
+  --spacing-testimonios: 12px 0 6px;
+  --spacing-carousel-items: 0 12px 16px 0;
 
-  --font-size-text: 0.75rem;
-  --font-size-subtitle: 1rem;
-  --font-size-title: 1.5rem;
-  --font-size-h1: 2rem;
-
+  /* Decoraciones */
   --border-radius: 4px;
+
+  /* Medidas */
+  --height-cta: 18vh;
+  --width-image: 100%;
+  --max-width-image: 600px;
 }
 
 html {
@@ -47,8 +64,8 @@ h2,
 p {
   margin: 0;
 }
-#loom-companion-mv3{
-    display: none;
+#loom-companion-mv3 {
+  display: none;
 }
 
 .whatsapp__fixed {
@@ -62,7 +79,7 @@ p {
   font-size: 1em;
   z-index: 20;
 }
-.whatsapp__fixed-content{
+.whatsapp__fixed-content {
   margin-left: 4px;
 }
 .button {
@@ -70,12 +87,12 @@ p {
   color: var(--color-text);
   font-size: 14px;
   padding: 6px 12px;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   transition: background-color 0.3s, color 0.3s;
 }
 .button:hover {
-    background-color: var(--color-bg-accent);
-    color: var(--color-primary);
+  background-color: var(--color-bg-accent);
+  color: var(--color-primary);
 }
 .button__secondary {
   background-color: var(--color-bg-accent);
@@ -91,16 +108,21 @@ p {
   color: var(--color-text);
   /* border: 1px solid var(--color-primary); */
 }
-.button__link{
+.button__link {
   color: var(--color-link);
 }
-.button__link:hover{
+.button__link:hover {
   color: var(--color-primary);
   text-decoration: underline;
 }
+.button__cta-final {
+  font-size: 1.2rem;
+  padding: 10px 18px;
+  font-weight: bold;
+}
 .title__section {
   padding-bottom: 6px;
-  margin-bottom: 6px;
+  margin-bottom: var(--spacing-titulos);
   font-size: var(--font-size-title);
   line-height: 28px;
   border-bottom: 1px solid var(--color-border);
@@ -108,6 +130,11 @@ p {
 .title__section span {
   width: 30px;
   color: var(--color-primary);
+}
+.subtitle__section {
+  font-size: var(--font-size-subtitle-section);
+  text-align: center;
+  margin-top: 0;
 }
 
 /* Header---------------------- */
@@ -159,7 +186,7 @@ header .menu-toggle {
   align-items: start;
   justify-content: center;
 }
-.mobile-nav ul{
+.mobile-nav ul {
   list-style: none;
 }
 .mobile-nav a {
@@ -186,7 +213,7 @@ header .menu-toggle {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #28D146;
+  background-color: #28d146;
   color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
@@ -240,24 +267,29 @@ header .menu-toggle {
 
 /* Submenú */
 .site-nav__item:hover > .site-nav__submenu {
-  display: block; /* Asegura que el submenú se muestre */
+  display: block;
 }
 
 .site-nav__submenu {
-  display: none; /* Oculta el submenú por defecto */
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: var(--color-bg);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 200px;
   list-style: none;
   margin: 0;
-  padding: 10px;
-  z-index: 100; /* Para evitar problemas de superposición */
+  padding: 0;
+  z-index: 100;
 }
 
 .site-nav__submenu-item {
   margin: 0;
+  padding: 3px 12px;
+}
+.site-nav__submenu-item:hover {
+  background-color: var(--color-bg-accent);
 }
 
 .site-nav__submenu-link {
@@ -268,6 +300,7 @@ header .menu-toggle {
 
 .site-nav__submenu-link:hover {
   color: #ff8300;
+  background-color: var(--color-bg-accent);
 }
 
 /* Indicador visual para elementos con submenús */
@@ -286,37 +319,37 @@ header .menu-toggle {
 .submenu-sitio__container {
   position: sticky;
   top: 60px;
-  z-index: 10; /* Asegura que se mantenga encima de otros elementos */
-  background-color: #fff; /* Fondo blanco para destacar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para separarlo visualmente */
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   margin-bottom: 26px;
 }
 
 /* Navegación secundaria */
 .submenu-sitio {
-  overflow-x: auto; /* Permite scroll horizontal */
-  white-space: nowrap; /* Evita el salto de línea de los elementos */
-  -webkit-overflow-scrolling: touch; /* Suaviza el scroll en dispositivos móviles */
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Lista horizontal */
 .submenu-sitio__list {
   display: flex;
-  overflow-x: scroll; /* Habilita desplazamiento horizontal */
-  scrollbar-width: none; /* Oculta la barra en Firefox */
+  overflow-x: scroll;
+  scrollbar-width: none;
   padding: 0;
   margin: 0;
-  gap: 10px; /* Espaciado entre los elementos */
+  gap: var(--spacing-submenu-sitio-items);
 }
 .submenu-sitio__list::-webkit-scrollbar {
-  display: none; /* Oculta la barra en navegadores WebKit */
+  display: none;
 }
 
 /* Elementos de la lista */
 .submenu-sitio__item {
-  flex: 0 0 auto; /* Los elementos no se reducen ni se expanden automáticamente */
-  text-align: center; /* Centra el texto en cada elemento */
+  flex: 0 0 auto;
+  text-align: center;
 }
 
 /* Enlaces */
@@ -327,27 +360,22 @@ header .menu-toggle {
   color: var(--color-link);
   font-weight: bold;
   font-size: 14px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   transition: background-color 0.3s, color 0.3s;
 }
-.button.submenu-sitio__link{
+.button.submenu-sitio__link {
   color: var(--color-text);
 }
-
 .submenu-sitio__link:hover {
   background-color: var(--color-bg-accent);
-  color: var(--color-primary); /* Color azul para hover */
+  color: var(--color-primary);
 }
-
-/* Efecto de scroll centrado */
 .submenu-sitio__item {
-  scroll-snap-align: center; /* Hace que los elementos queden centrados al desplazarse */
+  scroll-snap-align: center;
 }
-
-/* Ajustes para scroll suave */
 .submenu-sitio {
-  scroll-snap-type: x mandatory; /* Requiere que el scroll se detenga en cada elemento */
-  scrollbar-width: thin; /* Estilo fino para scrollbars en Firefox */
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
 }
 
 .submenu-sitio::-webkit-scrollbar {
@@ -356,7 +384,7 @@ header .menu-toggle {
 
 .submenu-sitio::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2); /* Color de la barra */
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 }
 
 /* Content (main) ----------------------------- */
@@ -365,15 +393,19 @@ main {
 }
 section {
   padding: 0 5%;
-  margin-bottom: 26px;
+  margin-bottom: var(--spacing-section);
 }
 /* Course -----------*/
 .course {
   padding: 0;
 }
 .course__video {
+  width: var(--width-image);
+}
+.course__video img {
   width: 100%;
-  aspect-ratio: 2/1;
+  max-width: var(--max-width-image);
+  height: auto;
 }
 .course__intro {
   padding: 0 5%;
@@ -384,28 +416,23 @@ section {
   font-weight: 400;
   font-size: var(--font-size-h1);
   line-height: 37px;
-  margin: 1em 0 .5em;
+  margin: var(--spacing-h1);
 }
 .course__subtitle {
-  margin-bottom: 12px;
+  margin-bottom: var(--spacing-listas-titles);
 }
-.course__intro--buttons__container{
-    padding: .5em 0 1em;
-}
-
-/* A quién está dirigido ------ */
-.who_is_it_for{
-  margin-bottom: 48px;
+.course__intro--buttons__container {
+  padding: 0.5em 0 1em;
 }
 
 /* Temario ----------*/
-.course__content {
+/* .course__content {
   position: relative;
   padding: 35px 5%;
   margin: 0 5% 26px;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-}
+} */
 .course__content-title {
   font-size: var(--font-size-title);
   text-align: center;
@@ -414,15 +441,18 @@ section {
   position: absolute;
   top: -20px;
   left: calc(50% - 1em);
-  padding: 0 .5em;
+  padding: 0 0.5em;
   font-size: 2rem;
   background-color: white;
   color: var(--color-primary);
 }
+.course__sub-title {
+  font-size: var(--font-size-subtitle-section);
+}
 /* Modulo */
 .course__module {
-  padding-bottom: 6px;
-  margin-bottom: 12px;
+  padding-bottom: var(--spacing-modulos);
+  margin-bottom: var(--spacing-modulos);
   border-bottom: 1px solid var(--color-border);
 }
 .course__module-list {
@@ -446,6 +476,9 @@ section {
   /* line-height: 14px; */
   opacity: 0.9;
 }
+.course__module-description li {
+  margin-bottom: var(--spacing-modulos-items);
+}
 
 /* Bonus: Cursos adicionales------ */
 .bonus {
@@ -459,10 +492,10 @@ section {
 .bonus__list-course {
   padding-left: 1.2rem;
 }
-.bonus__text{
+.bonus__text {
   margin-bottom: 1.2em;
 }
-.bonus_link{
+.bonus_link {
   color: var(--color-text);
   text-decoration: underline;
 }
@@ -471,24 +504,30 @@ section {
 .info__list {
   padding: 0;
   list-style-type: none;
+  margin: var(--spacing-listas-top) 0 var(--spacing-listas-bottom);
 }
-.info__list--bullets{
+.info__list--bullets {
   list-style-type: disc;
   padding-left: 1.5em;
 }
-.info-item {
-  margin-bottom: 12px;
+.info-item,
+.info-item__small,
+.info-item__big {
+  margin-bottom: var(--spacing-listas-items);
+}
+.info__list--inscription .info-item {
+  margin-bottom: var(--spacing-formas-de-pago);
 }
 .info-item__big {
   font-size: var(--font-size-subtitle);
-  margin: 0 0 6px;
+  margin: var(--spacing-listas-titles);
 }
 .info-item__small {
   font-size: var(--font-size-text);
 }
-.info-item__sub-list{
-    padding-left: 1.5em;
-    list-style-type: disc;
+.info-item__sub-list {
+  padding-left: 1.5em;
+  list-style-type: disc;
 }
 
 /* Testimonios--- */
@@ -514,6 +553,57 @@ section {
 .testimonials__starts {
   width: auto;
   height: 100%;
+}
+/* carousel  -----*/
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 2em 0 1em;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-item {
+  flex: 0 0 calc(100% / 2);
+  text-align: center;
+  padding: var(--spacing-carousel-items);
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  aspect-ratio: 1/1;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-bg-accent);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots button.active {
+  background-color: var(--color-text);
+  aspect-ratio: 1/1;
 }
 
 /* Contacto */
@@ -547,19 +637,19 @@ section {
   border-radius: var(--border-radius);
 }
 
-.destacado{
+.destacado {
   text-align: center;
   background-color: var(--color-accent);
-  padding: 1em .5em;
-  margin-top: .5em;
+  padding: 1em 0.5em;
+  margin-top: 0.5em;
 }
 /* CTA */
-.cta__container{
+.cta__container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 16vh;
+  height: var(--height-cta);
 }
 
 /* Footer ------------------ */
@@ -569,12 +659,12 @@ section {
   background-color: var(--color-text);
   color: #fff;
 }
-.footer__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 26px;
-    padding: 12px 5%;
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  padding: 12px 5%;
 }
 .footer__img {
   width: 50%;
@@ -600,6 +690,7 @@ section {
 }
 .footer-sites__list {
   list-style-type: none;
+  padding: 0;
 }
 .footer-sites__list li {
   display: inline;
@@ -617,86 +708,91 @@ section {
 .footer-sites__list li:last-child::after {
   content: "";
 }
-.footer-dark{
-    background-color: #282d32;
-    width: 100%;
+.footer-dark {
+  background-color: #282d32;
+  width: 100%;
 }
-.footer-dark__list{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    list-style: none;
-    padding: 1em;
+.footer-dark__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 1em;
 }
-.footer-dark__list a{
-    color: var(--color-bg-accent);
+.footer-dark__list a {
+  color: var(--color-bg-accent);
 }
-.footer-dark__list a:hover{
-    color: var(--color-primary);
+.footer-dark__list a:hover {
+  color: var(--color-primary);
 }
 
+/* Responsive Tablet ------------------------------------*/
+@media (min-width: 460px) {
+  .carousel-item {
+    flex: 0 0 calc(100% / 3);
+  }
+}
 /* Responsive Desktop ------------------------------------*/
 @media (min-width: 769px) {
-    :root {
-        --font-size-text: 1rem;
-    }
-    main{
-        display: grid; 
-        grid-template-areas: 
-        "header header" 
-        "sidebar content"; 
-        grid-template-columns: 1fr 3fr; 
-        gap: 10px; 
-        padding: 10px;
-        width: 80%;
-        margin: 0 auto;
-    }
-    section {
-        scroll-margin-top: 90px;
-    }
-    .course{
-        grid-area: header;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .course__intro{
-        padding: 0;
-        margin-bottom: 1em;
-        text-align: center;
-    }
-    .course__video{
-      width: 60%;
-      margin: 0 auto;
-    }
-    .course__title{
-      margin: 0;
-      font-size: 30px;
-      margin-bottom: 8px;
-      
-        /* padding-bottom: .4em; */
-        /* border-bottom: 1px solid var(--color-border); */
-    }
-    .submenu-sitio__container{
-        grid-area: sidebar;
-        height: max-content;
-        padding-top: 1em;
-        box-shadow: none;
-    }
-    .submenu-sitio__item{
-        text-align: start;
-        width: fit-content;
-    }
-    .submenu-sitio__item .submenu-sitio__link{
-        margin-left: 1.2em;
-    }
-    .submenu-sitio__list{
-        flex-direction: column;
-    }
-    .content__info{
-        grid-area: content;
-    }
+  :root {
+    --font-size-h1: 30px;
+    --font-size-text: 1rem;
+
+    --spacing-h1: 0 0 8px;
+
+    --width-image: 60%;
+  }
+  main {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content";
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  section {
+    scroll-margin-top: 90px;
+  }
+  .course {
+    grid-area: header;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .course__intro {
+    padding: 0;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .course__video {
+    margin: 0 auto;
+  }
+  .course__video img {
+    width: 60%;
+  }
+  .submenu-sitio__container {
+    grid-area: sidebar;
+    height: max-content;
+    padding-top: 1em;
+    box-shadow: none;
+  }
+  .submenu-sitio__item {
+    text-align: start;
+    width: fit-content;
+  }
+  .submenu-sitio__item .submenu-sitio__link {
+    margin-left: 1.2em;
+  }
+  .submenu-sitio__list {
+    flex-direction: column;
+  }
+  .content__info {
+    grid-area: content;
+  }
   .site-nav {
     display: block;
   }
@@ -708,10 +804,10 @@ section {
   .mobile-nav {
     display: none;
   }
-  .info-item__small{
-    font-size: .9rem;
+  .info-item__small {
+    font-size: 0.9rem;
   }
-  .whatsapp__fixed{
+  .whatsapp__fixed {
     /* top: 50%; */
     bottom: calc(50% - 80px);
     right: 2%;
@@ -727,30 +823,31 @@ section {
     /* border-radius: 50%; */
     border-radius: 1em;
     /* transition: ; */
-    transition: display .4s, background-color 0.3s, color 0.3s;
+    transition: display 0.4s, background-color 0.3s, color 0.3s;
   }
-    /* .whatsapp__fixed span{
+  /* .whatsapp__fixed span{
       display: none;
     } */
-    .whatsapp__fixed-content{
-      font-size: 1.5rem;
-    }
-  .whatsapp__fixed:hover{
-    background-color: var(--color-bg-accent);
-    color: #28D146;
-    
-    
+  .whatsapp__fixed-content {
+    font-size: 1.5rem;
   }
-  .whatsapp__fixed-content{
+  .whatsapp__fixed:hover {
+    background-color: var(--color-bg-accent);
+    color: #28d146;
+  }
+  .whatsapp__fixed-content {
     display: inline-block;
     font-size: 1rem;
     line-height: 1.1rem;
     margin-left: 8px;
   }
-  .info-item{
+  .info-item {
     margin-bottom: 16px;
   }
   .footer__logo .logo__footer {
     max-width: 220px;
+  }
+  .carousel-item {
+    flex: 0 0 calc(100% / 4);
   }
 }
