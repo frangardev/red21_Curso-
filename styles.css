@@ -173,6 +173,12 @@ p {
   font-size: 1em;
   z-index: 20;
 }
+
+.whatsapp__fixed svg{
+  fill: #fff;
+  width: 1.2em;
+  font-size: 1rem;
+}
 .whatsapp__fixed-content {
   margin-left: 4px;
 }
@@ -221,9 +227,20 @@ p {
   line-height: 28px;
   border-bottom: 1px solid var(--color-border);
 }
-.title__section span {
-  width: 30px;
-  color: var(--color-primary);
+.title__section span,
+.icon_mini,
+.icon_nav,
+.whatsapp__fixed span {
+   display: inline-block; 
+   vertical-align: text-top;
+}
+.title__section span svg{
+  width: 28px;
+  fill: var(--color-primary);
+}
+.icon_mini svg{
+  width: 16px;
+  fill: var(--color-text);
 }
 .subtitle__section {
   font-size: var(--font-size-subtitle-section);
@@ -393,10 +410,21 @@ header .menu-toggle {
   transition: color 0.3s;
 }
 
-.site-nav__submenu-link:hover {
-  color: #ff8300;
+.site-nav__submenu-link:hover,
+.submenu-sitio__link:hover .icon_nav svg {
+  color: var(--color-primary);
+  fill: var(--color-primary);
   background-color: var(--color-bg-accent);
 }
+.icon_nav{
+  margin-right: 2px;
+}
+.icon_nav svg{
+  fill: var(--color-link);
+  width: 1.1em;
+  font-size: 1rem;
+}
+
 
 /* Indicador visual para elementos con submenús */
 .site-nav__item:hover::after {
@@ -496,12 +524,16 @@ section {
 }
 .course__video {
   width: var(--width-image);
+  object-fit: cover;
 }
 .course__video img {
   max-width: var(--max-width-image);
   width: 100%;
   height: auto;
   display: block;
+}
+.course__video--cover{
+  object-fit: cover;
 }
 .course__intro {
   padding: 0 5%;
@@ -924,6 +956,9 @@ section {
     border-radius: 1em;
     /* transition: ; */
     transition: display 0.4s, background-color 0.3s, color 0.3s;
+  }
+  .whatsapp__fixed svg{
+    font-size: 2rem;
   }
   /* .whatsapp__fixed span{
       display: none;
