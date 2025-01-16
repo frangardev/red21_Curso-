@@ -1,3 +1,96 @@
+/* Stylos del style del html */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+
+  .col-sm-2 {
+      width: 16.66666667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #feb201;
+  display: block;
+  justify-content: center;
+  padding: 0 20%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.text-red{
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+      padding: 0 5%;
+  }
+
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+}
 /* Variables */
 :root {
   /* Tipografía */
@@ -158,6 +251,7 @@ header {
 
 .logo__header {
   width: 60%;
+  height: auto;
   max-width: 152px;
 }
 
@@ -404,9 +498,10 @@ section {
   width: var(--width-image);
 }
 .course__video img {
-  width: 100%;
   max-width: var(--max-width-image);
+  width: 100%;
   height: auto;
+  display: block;
 }
 .course__intro {
   padding: 0 5%;
@@ -574,6 +669,8 @@ section {
 
 .carousel-item {
   flex: 0 0 calc(100% / 2);
+  height: auto; 
+  flex-shrink: 0;
   text-align: center;
   padding: var(--spacing-carousel-items);
 }

@@ -2,145 +2,37 @@
 <html lang="es">
 
 <head>
-    <!-- Google Analytics Tag -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V10JJ85V9"></script>
-    <script>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conviértete en Experto en Logística. Curso online personalizado.">
+    <meta name="keywords" content="curso online Logística, curso a distancia, cursos personalizados">
+    <meta name="robots" content="index, follow">
+    <title>Curso Online de Administración de Empresas</title>
+
+    <!-- Preconexión para recursos externos -->
+    <!-- <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+
+    <!-- Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-5V10JJ85V9"></script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-5V10JJ85V9');
     </script>
 
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--INCLUIR AQUI LAS ETIQUETAS META QUE SE PRECISEN-->
-    <title>Curso Online de Administración de Empresas</title>
-    <meta name="description" content="Conviertete en Experto en Logistica. Curso online personalizado." />
-    <meta name="keywords"
-        content="curso a distancia Logistica, curso online Logistica, cursos por internet Logistica, cursos online de Logistica, estudiar a distancia, curso a distancia de Logistica, cursos distancia Logistica, curso Logistica" />
-    
-    <!--HASTA AQUI LAS ETIQUETAS META -->
-   <!-- Google tag (gtag.js) -->
-
-    <!-- Preloading Fonts and Stylesheets -->
-    <link rel="preload" href="assets/fonts/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    </noscript>
-    <!-- <link rel="preload" href="assets/bootstrap/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-     <!-- Estilios personalizado -->
-    <link rel="stylesheet" href="./styles.css">
-    <noscript>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    </noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-    <!-- Estilios personalizado -->
-    <link rel="stylesheet" href="./styles.css">
-
+    <!-- Fonts and Stylesheets -->
+    <link rel="stylesheet" href="./styles.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <!-- Styles -->
-    <style type="text/css">
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.42857143;
-            color: #333;
-            background-color: #fff;
-        }
-
-        a {
-            text-decoration: none;
-            color: #337ab7;
-        }
-
-        .container {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                width: 750px;
-            }
-
-            .col-sm-2 {
-                width: 16.66666667%;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .container {
-                width: 970px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .container {
-                width: 1170px;
-            }
-        }
-
-        .topnav {
-            overflow: hidden;
-            background-color: #feb201;
-            display: block;
-            justify-content: center;
-            padding: 0 20%;
-        }
-
-        .topnav a {
-            float: left;
-            display: block;
-            text-align: center;
-            font-size: 17px;
-        }
-
-        .dropdown {
-            float: right;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: fixed;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .text-red{
-            color: red;
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav {
-                padding: 0 5%;
-            }
-
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/slick-theme.css"> -->
 
     <!-- JavaScript -->
     <script src="./ofertas.js" defer></script>
 </head>
+
 
 <body>
     <header class="navbar">
@@ -149,16 +41,19 @@
                 <img src="assets/img/logo-1.png" alt="Logo" srcset=""> -->
                 <img
                     class="logo__header" 
-                    src="assets/img/logo-1.png" 
+                    src="https://cursosadistancia.com.uy/assets/img/logo-1.png" 
                     alt="Logotipo red21" 
-                    onerror="this.onerror=null; this.src='https://cursosadistancia.com.uy/assets/img/logo-1.png';"
+                    loading="lazy" 
+                    width="60px" 
+                    height="12px"
+                    
                 ></a>
             <button 
                 class="menu-toggle" 
                 id="menuToggle"
                 aria-label="Menú"
             >
-                <i class="fa-solid fa-bars"></i>            </button>
+                <i class="fa-solid fa-bars"></i> ☰ </button>
     
             <!-- Desktop Navigation -->
             <nav class="site-nav">
@@ -326,7 +221,14 @@
         <!-- Header (slider, titulo) -->
         <section class="course" >
             <!-- <img class="course__video" src="/assets/img/curso-online-de-administracion-de-empresas.webp" alt="curso online de administracion de empresas" longdesc="curso online decoracion"> -->
-            <img class="course__video" src="https://cursosadistancia.com.uy/assets/img/curso-online-distancia-logistica.webp" alt="Video sobre los cursos de red21" longdesc="curso online decoracion">
+            <img 
+                class="course__video" 
+                src="https://cursosadistancia.com.uy/assets/img/curso-online-distancia-logistica.webp" 
+                alt="Video sobre los cursos de red21" 
+                width="400px"
+                height="200px"
+
+            >
             <div class="course__intro">
                 <h1 class="course__title">Curso Online de Administración de Empresas</h1>
                 <p class="info-item__big" id="txtAbajoTitulo"></p>
@@ -630,34 +532,34 @@
                <div class="carousel">
                    <div class="carousel-track">
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/telefonica.png" alt="Marca 1">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/telefonica.png" alt="Marca 1" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/hays.png" alt="Marca 2">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/hays.png" alt="Marca 2" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/BSE.png" alt="Marca 3">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/BSE.png" alt="Marca 3" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/logoverde.svg" alt="Marca 4">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/logoverde.svg" alt="Marca 4" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/inefop.jpg" alt="Marca 5">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/inefop.jpg" alt="Marca 5" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/oxxo.png" alt="Marca 6">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/oxxo.png" alt="Marca 6" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/danone.png" alt="Marca 7">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/danone.png" alt="Marca 7" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/rocha.png" alt="Marca 8">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/rocha.png" alt="Marca 8" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/logo-tres-cruces-shopping.svg" alt="Marca 8">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/logo-tres-cruces-shopping.svg" alt="Marca 8" loading="lazy" width="100px" height="100px">
                    </div>
                    <div class="carousel-item">
-                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/nextel.png" alt="Marca 8">
+                       <img src="https://www.cursosadistancia.com.uy/logos-empresas/nextel.png" alt="Marca 8" loading="lazy" width="100px" height="100px">
                    </div>
                    </div>
                    <div class="carousel-dots"></div>
@@ -681,7 +583,9 @@
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    
+                            alt="starts"
+                            loading="lazy" width="100px" height="50px"
+                            >                    
                     </footer>
                 </blockquote>
                 <blockquote class="testimonials__quote">
@@ -693,7 +597,7 @@
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    
+                            alt="starts" loading="lazy" width="100px" height="50px">                    
                     </footer>
                 </blockquote>
                 <blockquote class="testimonials__quote">
@@ -705,7 +609,7 @@
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    
+                            alt="starts" loading="lazy" width="100px" height="50px">                    
                     </footer>
                 </blockquote>
                 <blockquote class="testimonials__quote">
@@ -717,7 +621,7 @@
                         <img 
                             class="testimonials__starts"
                             src="https://cursosadistancia.com.uy/assets/img/start-user-start.png" 
-                            alt="starts">                    
+                            alt="starts" loading="lazy" width="100px" height="50px">                    
                     </footer>
                 </blockquote>
 
@@ -739,6 +643,7 @@
                     src="assets/img/logo-1.png" 
                     alt="Logotipo red21" 
                     onerror="this.onerror=null; this.src='https://cursosadistancia.com.uy/assets/img/logo-1.png';"
+                    loading="lazy" width="167px" height="40px"
                 >
                 <p>26 años enseñando online</p>
             </div>
@@ -776,125 +681,8 @@
         </div>
     </footer>
 </body>
-<script>
-    // Lógica del Menú---
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileNav = document.getElementById('mobileNav');
-
-    let isMenuOpen = false;
-
-    menuToggle.addEventListener('click', () => {
-        isMenuOpen = !isMenuOpen;
-
-        if (isMenuOpen) {
-            mobileNav.classList.add('active');
-            menuToggle.textContent = '✖'; // Icono de cierre
-        } else {
-            mobileNav.classList.remove('active');
-            menuToggle.textContent = '☰'; // Icono de hamburguesa
-        }
-    });
-
-    // Agregar automaticamente el campo curso al formulario ------
-    document.addEventListener('DOMContentLoaded', (event) => {  
-        let pageTitle = document.title; 
-        let cursoInput = document.querySelector('#curso');  
-        if (cursoInput) { cursoInput.value = pageTitle; } 
-    });
-
-    // Agrega los textos de las ofertas del archivo ofertas.js ------
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById('btnWhatsApp').innerText = ofertaWhatsApp; 
-        document.getElementById('txtAbajoTitulo').innerText = ofertaAbajoTitulo; 
-        document.getElementById('txtAbajoTemario').innerText = ofertaAbajoTemario; 
-        document.getElementById('txtFormasDePago').innerText = ofertaFormasDePago;
-        const costoTotalElemento = document.getElementById('costoTotal').innerText; const costoTotal = parseFloat(costoTotalElemento.replace(/[^0-9.-]+/g, ""));  
-        const costoConDescuento = costoTotal * (1 - descuento / 100); 
-        document.getElementById('costoConDescuento').innerText = 
-            `Costo total con descuento del ${descuento}% incluido: $ ${costoConDescuento.toFixed(2)}`;
-    });
-
-  // Lógica del carrusel ---------
-    const track = document.querySelector('.carousel-track');
-    const items = Array.from(track.children);
-    const dotsContainer = document.querySelector('.carousel-dots');
-    let currentIndex = 0;
-    // Clonar elementos para crear el efecto infinito
-    function cloneItems() {
-    const clonesStart = items.slice(0, itemsPerView()).map(item => item.cloneNode(true));
-    const clonesEnd = items.slice(-itemsPerView()).map(item => item.cloneNode(true));
-    clonesStart.forEach(clone => track.appendChild(clone));
-    clonesEnd.reverse().forEach(clone => track.insertBefore(clone, track.firstChild));
-    }
-    // Obtener cuántas imágenes mostrar según el ancho del viewport
-    function itemsPerView() {
-    if (window.innerWidth <= 480) return 1;
-    if (window.innerWidth <= 768) return 2;
-    if (window.innerWidth <= 1200) return 4;
-    return 5;
-    }
-    // Ajustar ancho y posición inicial del carrusel
-    function setupCarousel() {
-    const itemWidth = items[0].getBoundingClientRect().width;
-    track.style.transform = `translateX(${-itemWidth * itemsPerView()}px)`;
-    }
-    // Crear puntos de navegación
-    function createDots() {
-    dotsContainer.innerHTML = '';
-    const dotsCount = items.length;
-    items.forEach((_, index) => {
-        const button = document.createElement('button');
-        if (index === 0) button.classList.add('active');
-        dotsContainer.appendChild(button);
-    });
-    }
-    // Mover el carrusel al índice especificado
-    function moveToIndex(index) {
-    const itemWidth = items[0].getBoundingClientRect().width;
-    track.style.transition = 'transform 0.5s ease';
-    track.style.transform = `translateX(${-itemWidth * (index + itemsPerView())}px)`;
-    dotsContainer.querySelectorAll('button').forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-    });
-    }
-    // Autoplay
-    function autoplay() {
-    currentIndex = (currentIndex + 1) % items.length;
-    moveToIndex(currentIndex);
-    }
-    let interval = setInterval(autoplay, 3000);
-    // Resetear posición para efecto infinito
-    track.addEventListener('transitionend', () => {
-    if (currentIndex === items.length) {
-        track.style.transition = 'none';
-        currentIndex = 0;
-        setupCarousel();
-    } else if (currentIndex === -1) {
-        track.style.transition = 'none';
-        currentIndex = items.length - 1;
-        setupCarousel();
-    }
-    });
-    // Puntos de navegación
-    dotsContainer.addEventListener('click', e => {
-    if (!e.target.matches('button')) return;
-    clearInterval(interval);
-    const dots = Array.from(dotsContainer.children);
-    currentIndex = dots.indexOf(e.target);
-    moveToIndex(currentIndex);
-    interval = setInterval(autoplay, 3000);
-    });
-    // Escuchar cambios de tamaño de ventana
-    window.addEventListener('resize', () => {
-    clearInterval(interval);
-    track.style.transition = 'none'; // Eliminar transición durante el redimensionado
-    setupCarousel();
-    interval = setInterval(autoplay, 3000);
-    });
-    // Inicializar carrusel
-    cloneItems();
-    setupCarousel();
-    createDots();
+<script defer>
+    function setupMenu(){const t=document.getElementById("menuToggle"),e=document.getElementById("mobileNav");let n=!1;t?.addEventListener("click",(()=>{n=!n,e?.classList.toggle("active",n),t.textContent=n?"✖":"☰"}))}function autoFillCourseField(){const t=document.querySelector("#curso");t&&(t.value=document.title)}function populateOfferTexts(){const t={btnWhatsApp:ofertaWhatsApp,txtAbajoTitulo:ofertaAbajoTitulo,txtAbajoTemario:ofertaAbajoTemario,txtFormasDePago:ofertaFormasDePago};for(const[e,n]of Object.entries(t)){const t=document.getElementById(e);t&&(t.innerText=n)}const e=document.getElementById("costoTotal"),n=document.getElementById("costoConDescuento");if(e&&n){const t=parseFloat(e.innerText.replace(/[^0-9.-]+/g,""))*(1-descuento/100);n.innerText=`Costo total con descuento del ${descuento}% incluido: $ ${t.toFixed(2)}`}}function initializeCarousel(){const t=document.querySelector(".carousel-track"),e=Array.from(t?.children||[]),n=document.querySelector(".carousel-dots");let o,i=0;function r(){return window.innerWidth<=480?1:window.innerWidth<=768?2:window.innerWidth<=1200?4:5}function a(){const n=e[0].getBoundingClientRect().width;t.style.transform=`translateX(${-n*r()}px)`}function s(o){const i=e[0].getBoundingClientRect().width;t.style.transition="transform 0.5s ease",t.style.transform=`translateX(${-i*(o+r())}px)`,n.querySelectorAll("button").forEach(((t,e)=>{t.classList.toggle("active",e===o)}))}function l(){i=(i+1)%e.length,s(i)}t&&0!==e.length&&(n.addEventListener("click",(t=>{if(!t.target.matches("button"))return;clearInterval(o);const e=Array.from(n.children);i=e.indexOf(t.target),s(i),o=setInterval(l,3e3)})),window.addEventListener("resize",(()=>{clearInterval(o),t.style.transition="none",a(),o=setInterval(l,3e3)})),t.addEventListener("transitionend",(function(){i===e.length?(t.style.transition="none",i=0,a()):-1===i&&(t.style.transition="none",i=e.length-1,a())})),a(),n.innerHTML="",e.forEach(((t,e)=>{const o=document.createElement("button");0===e&&o.classList.add("active"),n.appendChild(o)})),o=setInterval(l,3e3))}document.addEventListener("DOMContentLoaded",(()=>{setupMenu(),autoFillCourseField(),populateOfferTexts(),initializeCarousel()}));
 </script>
 
 </html>
