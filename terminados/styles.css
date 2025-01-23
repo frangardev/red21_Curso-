@@ -862,6 +862,31 @@ section {
   color: var(--color-primary);
 }
 
+.profile-card img { 
+  width: 200px; 
+  height: 200px; 
+  float: left; 
+  shape-outside: margin-box; 
+  margin: 0 14px 7px 0; 
+  border-radius: var(--border-radius);
+} 
+.profile-card .profile-info { 
+  overflow: hidden; 
+} 
+.profile-card .profile-info h2 { 
+  margin: 0; 
+  font-size: 24px; 
+} 
+.profile-card .profile-info p { 
+  margin: 5px 0; 
+  font-size: 16px; 
+} 
+.clearfix::after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+}
+
 /* Responsive Tablet ------------------------------------*/
 @media (min-width: 460px) {
   .carousel-item {
@@ -958,9 +983,6 @@ section {
   .whatsapp__fixed svg{
     font-size: 3rem;
   }
-  /* .whatsapp__fixed span{
-      display: none;
-    } */
   .whatsapp__fixed-content {
     font-size: 1.5rem;
   }

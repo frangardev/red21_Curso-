@@ -173,7 +173,9 @@ p {
   font-size: 1em;
   z-index: 20;
 }
-
+.whatsapp__fixed span:first-of-type{
+  height: inherit;
+}
 .whatsapp__fixed svg{
   fill: #fff;
   width: 1.2em;
@@ -860,6 +862,30 @@ section {
   color: var(--color-primary);
 }
 
+.profile-card img { 
+  width: 200px; 
+  height: 200px; 
+  float: left; 
+  shape-outside: margin-box; 
+  margin: 0 14px 7px 0; 
+} 
+.profile-card .profile-info { 
+  overflow: hidden; 
+} 
+.profile-card .profile-info h2 { 
+  margin: 0; 
+  font-size: 24px; 
+} 
+.profile-card .profile-info p { 
+  margin: 5px 0; 
+  font-size: 16px; 
+} 
+.clearfix::after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+}
+
 /* Responsive Tablet ------------------------------------*/
 @media (min-width: 460px) {
   .carousel-item {
@@ -940,35 +966,33 @@ section {
     font-size: 0.9rem;
   }
   .whatsapp__fixed {
-    /* top: 50%; */
     bottom: calc(50% - 80px);
     right: 2%;
     left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 240px;
-    /* width: fit-content; */
-    /* max-width: 320px; */
+    padding: 16px 24px;
+    width: 252px;
     height: 80px;
     font-size: 4rem;
-    /* border-radius: 50%; */
     border-radius: 1em;
-    /* transition: ; */
     transition: display 0.4s, background-color 0.3s, color 0.3s;
   }
   .whatsapp__fixed svg{
-    font-size: 2rem;
+    font-size: 3rem;
   }
-  /* .whatsapp__fixed span{
-      display: none;
-    } */
   .whatsapp__fixed-content {
     font-size: 1.5rem;
   }
-  .whatsapp__fixed:hover {
+  .whatsapp__fixed:hover,
+  .whatsapp__fixed:hover svg {
     background-color: var(--color-bg-accent);
     color: #28d146;
+  }
+  .whatsapp__fixed:hover svg {
+    fill: #28d146;
+    background-color: transparent;
   }
   .whatsapp__fixed-content {
     display: inline-block;
