@@ -249,6 +249,14 @@ p {
   text-align: center;
   margin-top: 0;
 }
+.sub-subtitle{
+  font-size: .9rem;
+  opacity: .9;
+  margin: 0 0 6px;
+}
+.normall{
+  font-weight: 400;
+}
 
 /* Header---------------------- */
 header {
@@ -528,7 +536,8 @@ section {
   width: var(--width-image);
   object-fit: cover;
 }
-.course__video img {
+.course__video img
+, img.course__video {
   max-width: var(--max-width-image);
   width: 100%;
   height: auto;
@@ -868,7 +877,6 @@ section {
   float: left; 
   shape-outside: margin-box; 
   margin: 0 14px 7px 0; 
-  border-radius: var(--border-radius);
 } 
 .profile-card .profile-info { 
   overflow: hidden; 
