@@ -4,9 +4,8 @@ from bs4 import BeautifulSoup
 # Configuración centralizada para los selectores y atributos
 CONFIG = {
     "temario": {
-        "contenedor": {"tag": "div", "id": "s-div3"},  # Selección por id
-        "encabezado": {"tag": "h2", "texto": "Temario"},  # Busca el encabezado "Temario"
-        "modulos": {"tag": ["p", "h5"], "strong": True}  # Busca módulos en <p><strong> o <h5>
+        "contenedor": {"tag": "div", "id": "modulos"},  # Busca el contenedor por ID
+        "modulos": {"tag": "h5"}  # Busca los títulos de los módulos en <h5>
     }
 }
 
@@ -16,20 +15,13 @@ def buscar_temario(soup):
     Si no se encuentra, devuelve XXX.
     """
     try:
-        # Busca el contenedor de la sección de Temario por su id
-        contenedor_temario = soup.find(**CONFIG["temario"]["contenedor"])
+        # Busca el contenedor de la sección de Temario por su ID
+        contenedor_temario = soup.find(CONFIG["temario"]["contenedor"]["tag"], id=CONFIG["temario"]["contenedor"]["id"])
         if not contenedor_temario:
             print("No se encontró el contenedor de la sección 'Temario'.")
             return "XXX"
         
-        # Busca el encabezado "Temario" dentro del contenedor
-        encabezado_temario = contenedor_temario.find(
-            lambda tag: tag.name == CONFIG["temario"]["encabezado"]["tag"] and
-                        CONFIG["temario"]["encabezado"]["texto"] in tag.get_text()
-        )
-        if not encabezado_temario:
-            print("No se encontró el encabezado de la sección 'Temario'.")
-            return "XXX"
+        print("Contenedor de Temario encontrado.")
         
         # Extrae los módulos del temario
         modulos = extraer_modulos(contenedor_temario)
@@ -47,20 +39,22 @@ def extraer_modulos(contenedor):
     modulos = []
     elementos = contenedor.find_all(CONFIG["temario"]["modulos"]["tag"], recursive=False)
     
+    print(f"Se encontraron {len(elementos)} módulos en el contenedor.")
+    
     for elemento in elementos:
-        if elemento.find("strong"):  # Solo procesa elementos con <strong> (títulos de módulos)
-            titulo = elemento.get_text(strip=True)
-            items = []
-            siguiente = elemento.find_next_sibling()
-            
-            # Recoge los elementos de la lista (<ul>) que sigue al título del módulo
-            while siguiente and siguiente.name not in ["p", "h5"]:
-                if siguiente.name == "ul":
-                    items = [li.get_text(strip=True) for li in siguiente.find_all("li")]
-                    break
-                siguiente = siguiente.find_next_sibling()
-            
-            modulos.append({"titulo": titulo, "items": items})
+        titulo = elemento.get_text(strip=True)
+        items = []
+        siguiente = elemento.find_next_sibling()
+        
+        # Recoge los elementos de la lista (<ul>) que sigue al título del módulo
+        while siguiente and siguiente.name != "h5":
+            if siguiente.name == "ul":
+                items = [li.get_text(strip=True) for li in siguiente.find_all("li")]
+                break
+            siguiente = siguiente.find_next_sibling()
+        
+        print(f"Módulo encontrado: {titulo} con {len(items)} elementos.")
+        modulos.append({"titulo": titulo, "items": items})
     
     return modulos if modulos else "XXX"
 
@@ -114,10 +108,12 @@ def main():
     modulos = buscar_temario(soup)
     temario_html = construir_html_temario(modulos)
     
-    if temario_html:
+    if temario_html != "XXX":
         with open("temario_convertido.html", "w", encoding="utf-8") as file:
             file.write(temario_html)
         print("Archivo 'temario_convertido.html' creado con éxito.")
+    else:
+        print("Error: No se pudo crear el archivo 'temario_convertido.html'.")
 
 if __name__ == "__main__":
     main()

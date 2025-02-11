@@ -269,8 +269,6 @@
 
         <!-- Contendio del sitio -->
         <div class="content__info">
-            <!-- Contendio del sitio -->
-        <div class="content__info">
             <!-- Texto introducción -->
             <section>
                 <blockquote style="margin: 0;">
@@ -307,6 +305,43 @@
                 </h2>
                 <p class="info-item__text">Público en general.</p>
             </section>
+
+
+            <div id="s-div3" class="col-sm-12">
+                <h2 class="encabezado-preguntas"><i class="fa fa-list-ul encabezado-preguntas-fa"></i>Temario
+                </h2>
+                <!-- CONTENDIO DE LA SECCION TEMARIO-->
+                <div class="contenido_tab" style="padding-bottom: 40px;">
+                    <p><strong>Módulo 1: sdfasdaf</strong></p>
+                    <p>&nbsp;</p>
+                    <ul>
+                        <li><strong>Fórmulas:</strong> Cómo automatizar cálculos cotidianos. </li>
+                        <li><strong>Funciones:</strong>Cómo utilizar las funciones pre-instaladas en Excel.</li>
+                        <li><strong>Formato  de celdas:</strong> Tipos de números. Formatos personalizados. Aspecto profesional<strong>:</strong>  Formatos condicionales. </li>
+                        <li><strong>Edición avanzada:</strong> Pegado especial. Organizar con paneles. Ocultar filas, columnas y hojas. </li>
+                        <li><strong>Gráficos:</strong> Creación de gráficos. Tipos de gráficos. Cómo crear gráficos para presentaciones. </li>
+                    </ul>
+                    <h5>Módulo 2: sdfsdf</h5>
+                    <p>&nbsp;</p>
+                    <ul>
+                        <li><strong>Datos:  </strong> Cómo filtrar datos. Filtro avanzado.  Trabajar con listas filtradas. </li>
+                        <li><strong>Subtotales:</strong> Subtotales automáticos. Organización de subtotales.  </li>
+                        <li><strong>Trabajo avanzado con formulas:</strong> Tipos de errores en las fórmulas.   Funciones de búsqueda.</li>
+                        <li><strong>Gráficos avanzados:</strong> Gráficos tridimensionales. Usar imágenes en gráficos. Impresión de gráficos.</li>
+                        <li><strong>Tablas y gráficos dinámicos:</strong> Cómo crear tablas dinámicas.  Actualización y gráficos dinámicos. </li>
+                        <li><strong>Análisis de datos y macros:</strong> Búsqueda de objetivos.  Escenarios. </li>
+                        <li><strong> Macros: </strong>Cómo automatizar cualquier secuencia de acciones. </li>
+                        <li><strong>Plantillas:</strong> Qué son las plantillas. Cómo crear plantillas. </li>
+                        <li><strong>Compartir</strong>: Cómo compartir una hoja de cálculo con colaboradores. Tipos de permisos. Cómo grabar archivos en la nube MIcrosoft OneDrive. . </li>
+                    </ul>
+                    <h5>&nbsp;</h5>
+              </div>
+                <!-- FIN DE LA SECCION TEMARIO -->
+                
+            </div>
+
+
+
 
             <!-- Temario del curso -->
             <section class="course__contesnt" id="s-div1">
@@ -417,6 +452,7 @@
                 <ul class="info__list info__list--bullets">
                     <li class="info-item__small"><strong>Comienzo inmediato:</strong> Comenzarás el curso al día siguiente de la fecha de inscripción.</li>
                     <li class="info-item__small">El <strong>título final</strong> a obtener es de <span style="font-weight: bold;">XXXXX.</span></li>
+                    <li class="info-item__small">El <strong>certificado final</strong> que obtendrás es de <span style="font-weight: bold;">XXXXX.</span></li>
                     <li class="info-item__small"><strong>Aprende a tu ritmo</strong>: No necesitas estar conectado a una determinada hora. <strong>Puedes tomar las lecciones en cualquier horario y todos los días de la semana, las 24 horas.</strong></li>
                     <li class="info-item__small"><strong>Contenido a medida:</strong> Si necesitás temas específicos, personalizamos el curso para adaptarlo a tus necesidades.</li>
                     <li class="info-item__small"><strong>Formación flexible:</strong> Podés agregar o ajustar contenidos según lo que realmente necesitás aprender.</li>
@@ -525,7 +561,7 @@
                     <li class="info-item">
                         <h3 class="info-item__big">Pagar con Paypal</h3>
                         <ul class="info-item__sub-list">
-                            <li class="info-item__small">Para pagar con Paypal, solicita el enlace de pago correspondiente respondiendo el correo que se envió. Debes indicar el plan de pago que prefieres. También puedes indicarlo desde nuestro formulario de atención al usuario: <a class="button__link" href="#s-div4" class="page-scroll">clic aquí</a>.</li>
+                            <li class="info-item__small">Para pagar con Paypal, solicita el enlace de pago correspondiente respondiendo el correo que se envió. Debes indicar el plan de pago que prefieres. También puedes indicarlo desde nuestro formulario de atención al usuario: <a class="button__link" href="#s-div6" class="page-scroll">clic aquí</a>.</li>
                         </ul>
                     </li>
                     <li class="info-item"></li>
@@ -542,7 +578,7 @@
                 
                     <!-- Nombre -->
                     <label for="name" class="contact__label">Nombre</label>
-                    <input id="nomape" name="nomape" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
+                    <input id="name" name="name" type="text" class="contact__input" placeholder="Ingresa tu nombre" required>
                 
                     <!-- Correo -->
                     <label for="email" class="contact__label">Correo</label>
@@ -553,8 +589,8 @@
                     <input 
                         type="tel" 
                         class="contact__input" 
-                        id="telefono" 
-                        name="telefono" 
+                        id="phone" 
+                        name="phone" 
                         placeholder="Ingresa tu número de teléfono" 
                         title="campo numérico"
                         pattern="^[0-9\-\+\s\(\)]*$"
@@ -572,7 +608,7 @@
                 
                     <!-- Mensaje -->
                     <label for="message" class="contact__label">Mensaje</label>
-                    <textarea id="comenta" name="comenta" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
+                    <textarea id="message" name="message" class="contact__textarea" placeholder="Escribe tu mensaje" required></textarea>
                 
                     <!-- Botón -->
                     <button id="button1id" name="button1id" type="submit" class="button button__form">Enviar</button>
@@ -650,8 +686,8 @@
             </section>
 
             <!-- CTA -->
-             <section class="cta__container">
-                <a aria-label="Inscribirse al curso" href="#s-div4" class="button button__cta-final">Inscribirse</a>             
+            <section class="cta__container">
+                <a aria-label="Inscribirse al curso" href="#s-div4" class="button button__cta-final">Inscribete ahora</a>             
             </section>
         </div>
     </main>

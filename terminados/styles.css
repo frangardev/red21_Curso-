@@ -192,7 +192,11 @@ p {
   border-radius: var(--border-radius);
   transition: background-color 0.3s, color 0.3s;
 }
+button.button{
+  border: none;
+}
 .button:hover {
+  cursor: pointer;
   background-color: var(--color-bg-accent);
   color: var(--color-primary);
 }
@@ -874,6 +878,7 @@ section {
 .profile-card img { 
   width: 200px; 
   height: 200px; 
+  object-fit: cover;
   float: left; 
   shape-outside: margin-box; 
   margin: 0 14px 7px 0; 
